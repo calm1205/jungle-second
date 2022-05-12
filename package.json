@@ -1,0 +1,16 @@
+{
+  "name": "lounge_jungle",
+  "version": "1.0.0",
+  "description": "会員制ラウンジ ジャングル",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@private:calm1205/Lounge_Jungle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
