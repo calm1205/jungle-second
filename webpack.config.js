@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPulgin({
       title: "React Sandbox",
-      favicon: path.resolve(__dirname, "src", "public", "favicon.ico"),
+      // favicon: path.resolve(__dirname, "src", "public", "favicon.ico"),
       template: path.resolve(__dirname, "src", "index.html"),
     }),
   ],
