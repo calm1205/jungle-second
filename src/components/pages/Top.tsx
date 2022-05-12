@@ -1,9 +1,11 @@
 import React from "react";
 
-export default () => {
+const Top: React.FC = () => {
   return (
     <>
       <h1>top ページ</h1>
     </>
   );
 };
+
+export default Top;

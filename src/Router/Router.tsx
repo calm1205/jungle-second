@@ -5,7 +5,7 @@ export const Router: React.FC = () => {
   const Top = lazy(() => import("~/components/pages/Top"));
 
   const suspensise = useCallback(
-    (Component: React.LazyExoticComponent<() => JSX.Element>) => (
+    (Component: React.LazyExoticComponent<React.FC<{}>>) => (
       <Suspense fallback={<>...</>}>
         <Component />
       </Suspense>
