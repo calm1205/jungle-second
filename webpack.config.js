@@ -14,8 +14,7 @@ module.exports = {
   entry: "./src/main.tsx",
   plugins: [
     new HtmlWebpackPulgin({
-      title: "React Sandbox",
-      // favicon: path.resolve(__dirname, "src", "public", "favicon.ico"),
+      title: "Lounge Jungle",
       template: path.resolve(__dirname, "src", "index.html"),
     }),
   ],
@@ -61,6 +60,13 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       "~": path.resolve(__dirname, "src"),
+    },
+  },
+
+  devServer: {
+    historyApiFallback: true,
+    client: {
+      logging: "warn",
     },
   },
 };
