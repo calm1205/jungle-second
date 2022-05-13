@@ -1,9 +1,10 @@
 import React from "react";
+import { PageTitle } from "~/components/atoms";
 
 const Top: React.FC = () => {
   return (
     <>
-      <h1>top ページ</h1>
+      <PageTitle title={"トップページ"} />
     </>
   );
 };

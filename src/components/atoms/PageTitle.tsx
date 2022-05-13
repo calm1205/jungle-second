@@ -9,4 +9,6 @@ export const PageTitle: React.FC<PageTitleProps> = ({ title }) => {
   return <PageTitleStyle>{title}</PageTitleStyle>;
 };
 
-const PageTitleStyle = styled.h1``;
+const PageTitleStyle = styled.h1`
+  font-size: 5rem;
+`;

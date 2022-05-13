@@ -3,8 +3,13 @@ import { createGlobalStyle, css } from "styled-components";
 
 const globalStyle = css`
   ${reset}
+
+  html {
+    font-size: 8px;
+  }
+
   * {
-    color: red;
+    font-family: sans-serif;
   }
 `;
 const ResetCSS = createGlobalStyle`${globalStyle}`;
