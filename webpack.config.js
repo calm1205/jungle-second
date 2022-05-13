@@ -62,4 +62,11 @@ module.exports = {
       "~": path.resolve(__dirname, "src"),
     },
   },
+
+  devServer: {
+    historyApiFallback: true,
+    client: {
+      logging: "warn",
+    },
+  },
 };

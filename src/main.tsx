@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Router } from "./Router/Router";
-import { Reset } from "styled-reset";
+import ResetCSS from "./ResetCSS";
 
 const rootDOM = document.getElementById("root") as HTMLElement;
 const root = ReactDOM.createRoot(rootDOM);
 
 root.render(
   <React.StrictMode>
-    <Reset />
+    <ResetCSS />
     <Router />
   </React.StrictMode>
 );
