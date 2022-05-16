@@ -8,6 +8,7 @@ import {
   Access,
   Contact,
 } from "~/components/molecules";
+import { Footer } from "../templates/Footer";
 
 const Top: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Top: React.FC = () => {
       <Recruit />
       <Access />
       <Contact />
+      <Footer>© Lounge Jungle All rights reserved.</Footer>
     </>
   );
 };
