@@ -1,10 +1,20 @@
 import React from "react";
-import { PageTitle } from "~/components/atoms";
+import {
+  Concept,
+  Heading,
+  System,
+  Description,
+  Recruit,
+} from "~/components/molecules";
 
 const Top: React.FC = () => {
   return (
     <>
-      <PageTitle title={"トップページ"} />
+      <Heading />
+      <Concept />
+      <System />
+      <Description />
+      <Recruit />
     </>
   );
 };

@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPulgin({
       title: "Lounge Jungle",
-      template: path.resolve(__dirname, "src", "index.html"),
+      template: path.resolve(__dirname, "src", "public", "index.html"),
     }),
   ],
   output: {
@@ -47,9 +47,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx$/,
+        test: /\.ts|\.tsx$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },

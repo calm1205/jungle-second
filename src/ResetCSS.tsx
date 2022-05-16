@@ -1,17 +1,16 @@
 import reset from "styled-reset";
 import { createGlobalStyle, css } from "styled-components";
+import { theme } from "./theme";
 
 const globalStyle = css`
   ${reset}
 
   html {
+    color: ${theme.font.color.default};
     font-size: 8px;
-  }
-
-  * {
-    font-family: sans-serif;
+    font-family: ${theme.font.family.default};
+    background-color: ${theme.background.color.main};
   }
 `;
-const ResetCSS = createGlobalStyle`${globalStyle}`;
 
-export default ResetCSS;
+export default createGlobalStyle`${globalStyle}`;

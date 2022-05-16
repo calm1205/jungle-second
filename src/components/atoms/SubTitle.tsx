@@ -1,0 +1,17 @@
+import React from "react";
+import styled, { css } from "styled-components";
+
+type SubTitleType = {
+  text: string;
+};
+
+export const SubTitle: React.FC<SubTitleType> = ({ text }) => {
+  return <H3 children={text} />;
+};
+
+const H3 = styled.h3`
+  ${({ theme }) => css`
+    font-size: 2.5rem;
+    letter-spacing: ${theme.font.letterSpacing.title};
+  `}
+`;
