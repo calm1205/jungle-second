@@ -11,3 +11,5 @@ https://www.aman.com/ja-jp/hotels/aman-tokyo?utm_content=20220315-Spring+ads-RSA
 ## サイト構成の参考
 
 https://terrace-h.co.jp/
+
+https://www.emailjs.com/
