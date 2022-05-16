@@ -1,6 +1,6 @@
 import React from "react";
 import { theme } from "~/theme";
-import { BackgroundWhite, Box, Input, TextArea, Title } from "../atoms";
+import { BackgroundWhite, Box, Button, Input, TextArea, Title } from "../atoms";
 
 export const Contact: React.FC = () => {
   return (
@@ -27,6 +27,10 @@ export const Contact: React.FC = () => {
               label="お問い合わせ内容"
               placeholder="ここに入力"
             />
+          </Box>
+
+          <Box marginTop={theme.space.m}>
+            <Button>送信</Button>
           </Box>
         </Box>
       </Box>
