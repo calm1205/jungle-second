@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import styled, { css } from "styled-components";
 import { Label } from "./Label";
 
@@ -6,13 +6,26 @@ type Input = {
   name: string;
   label: string;
   placeholder?: string;
+  value?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const Input: React.FC<Input> = ({ name, label, placeholder }) => {
+export const Input: React.FC<Input> = ({
+  name,
+  label,
+  placeholder,
+  value,
+  onChange,
+}) => {
   return (
     <>
       <Label text={label}>
-        <StyledInput name={name} placeholder={placeholder} />
+        <StyledInput
+          name={name}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+        />
       </Label>
     </>
   );
