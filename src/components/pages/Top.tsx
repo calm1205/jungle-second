@@ -6,6 +6,7 @@ import {
   Description,
   Recruit,
   Access,
+  Contact,
 } from "~/components/molecules";
 
 const Top: React.FC = () => {
@@ -17,6 +18,7 @@ const Top: React.FC = () => {
       <Description />
       <Recruit />
       <Access />
+      <Contact />
     </>
   );
 };

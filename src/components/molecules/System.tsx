@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Box, Title } from "~/components/atoms";
+import { BackgroundWhite, Box, Title } from "~/components/atoms";
 import { Fee } from "~/components/molecules";
 import { theme } from "~/theme";
 
 export const System: React.FC = () => {
   return (
-    <Background>
+    <BackgroundWhite>
       <Box paddingTop={theme.space.xl} textAlign="center">
         <Title text="システム" />
       </Box>
@@ -49,10 +49,6 @@ export const System: React.FC = () => {
       </Box>
 
       <Box paddingBottom={theme.space.xl} />
-    </Background>
+    </BackgroundWhite>
   );
 };
-
-const Background = styled.div`
-  background-color: ${({ theme }) => theme.background.color.secondary};
-`;

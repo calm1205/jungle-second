@@ -44,6 +44,17 @@ export const theme = {
   },
 
   /**
+   * フォーム
+   */
+  input: {
+    border: {
+      color: {
+        default: "#dad9d6",
+      },
+    },
+  },
+
+  /**
    * 余白
    */
   space: {
