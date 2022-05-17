@@ -3,7 +3,7 @@ import { theme } from "~/theme";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { Box, Button } from "~/components/atoms";
 import { RInput, RTextArea } from "~/components/react-hook-forms";
-import emailjs from "@emailjs/browser";
+import { sendEmail } from "~/hooks";
 
 type EmailFormTypes = {
   name: string;
@@ -15,23 +15,13 @@ export const EmailForm: React.FC = () => {
   const methods = useForm<EmailFormTypes>({
     mode: "onBlur",
     reValidateMode: "onChange",
-    defaultValues: {
-      name: "",
-      email: "",
-      content: "",
-    },
+    defaultValues: { name: "", email: "", content: "" },
   });
   const { handleSubmit, reset } = methods;
 
   const onSubmit: SubmitHandler<EmailFormTypes> = async (input) => {
-    // const result = await emailjs.send(
-    //   process.env.EMAILJS_SERVICE_ID!,
-    //   process.env.EMAILJS_TEMPLATE_ID!,
-    //   { message: input.content },
-    //   process.env.EMAILJS_PUBLIC_KEY!
-    // );
-    // console.log('email result',result);
     console.log("input value", input);
+    sendEmail(input);
     reset();
   };
 
