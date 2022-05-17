@@ -1,21 +1,23 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import styled, { css } from "styled-components";
 import { Label } from "./Label";
 
-type TextArea = {
+export type TextAreaType = {
   name: string;
   label: string;
   placeholder?: string;
   value?: string;
-  onChange?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange?: () => void;
+  onBlur?: () => void;
 };
 
-export const TextArea: React.FC<TextArea> = ({
+export const TextArea: React.FC<TextAreaType> = ({
   name,
   label,
   placeholder,
   value,
   onChange,
+  onBlur,
 }) => {
   return (
     <>
@@ -25,13 +27,14 @@ export const TextArea: React.FC<TextArea> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
         />
       </Label>
     </>
   );
 };
 
-export const StyledTextArea = styled.textarea`
+const StyledTextArea = styled.textarea`
   ${({ theme }) =>
     css`
       color: ${theme.font.color.default};

@@ -1,21 +1,23 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import styled, { css } from "styled-components";
 import { Label } from "./Label";
 
-type Input = {
+export type InputType = {
   name: string;
   label: string;
   placeholder?: string;
   value?: string;
-  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: () => void;
+  onBlur?: () => void;
 };
 
-export const Input: React.FC<Input> = ({
+export const Input: React.FC<InputType> = ({
   name,
   label,
   placeholder,
   value,
   onChange,
+  onBlur,
 }) => {
   return (
     <>
@@ -25,13 +27,14 @@ export const Input: React.FC<Input> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
         />
       </Label>
     </>
   );
 };
 
-export const StyledInput = styled.input`
+const StyledInput = styled.input`
   ${({ theme }) =>
     css`
       color: ${theme.font.color.default};
