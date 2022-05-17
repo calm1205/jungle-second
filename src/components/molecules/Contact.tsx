@@ -10,12 +10,13 @@ export const Contact: React.FC = () => {
   const [content, onChangeContent] = useFormValue();
 
   const onSubmit = async () => {
-    await emailjs.send(
+    const result = await emailjs.send(
       process.env.EMAILJS_SERVICE_ID!,
       process.env.EMAILJS_TEMPLATE_ID!,
       { message: "hello world" },
       process.env.EMAILJS_PUBLIC_KEY!
     );
+    console.log(result);
   };
 
   return (
