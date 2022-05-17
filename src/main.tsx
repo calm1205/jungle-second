@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Router } from "./router/Router";
-import ResetCss from "./resetCss";
+import ResetCss from "./resetCSS";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 

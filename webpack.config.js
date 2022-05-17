@@ -8,6 +8,9 @@ const path = require("path");
  * https://github.com/jantimon/html-webpack-plugin#options
  */
 const HtmlWebpackPulgin = require("html-webpack-plugin");
+const dotenv = require("dotenv");
+const webpack = require("webpack");
+const env = dotenv.config().parsed;
 
 module.exports = {
   mode: "development",
@@ -16,6 +19,17 @@ module.exports = {
     new HtmlWebpackPulgin({
       title: "Lounge Jungle",
       template: path.resolve(__dirname, "src", "public", "index.html"),
+    }),
+
+    /**
+     * コード上で以下のkeyに該当する箇所をvalueで上書き
+     */
+    new webpack.DefinePlugin({
+      "process.env.EMAILJS_SERVICE_ID": JSON.stringify(env.EMAILJS_SERVICE_ID),
+      "process.env.EMAILJS_TEMPLATE_ID": JSON.stringify(
+        env.EMAILJS_TEMPLATE_ID
+      ),
+      "process.env.EMAILJS_PUBLIC_KEY": JSON.stringify(env.EMAILJS_PUBLIC_KEY),
     }),
   ],
   output: {

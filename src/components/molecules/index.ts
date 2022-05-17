@@ -8,3 +8,4 @@ export { Contact } from "./Contact";
 
 export { Fee } from "./Fee";
 export { RecruitPreview } from "./RecruitPreview";
+export { EmailForm } from "./EmailForm";
