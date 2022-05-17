@@ -8,6 +8,7 @@ export { Paragraph } from "./Paragraph";
 export { Button } from "./Button";
 
 export { Label } from "./Label";
+export { FormErrorMessage } from "./FormErrorMessage";
 
 export { Input } from "./Input";
 export { InputType } from "./Input";

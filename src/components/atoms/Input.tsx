@@ -1,5 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { theme } from "~/theme";
+import { Box } from "./Box";
+import { FormErrorMessage } from "./FormErrorMessage";
 import { Label } from "./Label";
 
 export type InputType = {
@@ -7,6 +10,7 @@ export type InputType = {
   label: string;
   placeholder?: string;
   value?: string;
+  error?: string;
   onChange?: () => void;
   onBlur?: () => void;
 };
@@ -16,6 +20,7 @@ export const Input: React.FC<InputType> = ({
   label,
   placeholder,
   value,
+  error,
   onChange,
   onBlur,
 }) => {
@@ -29,6 +34,9 @@ export const Input: React.FC<InputType> = ({
           onChange={onChange}
           onBlur={onBlur}
         />
+        <Box marginTop={theme.space.xs}>
+          <FormErrorMessage children={error} />
+        </Box>
       </Label>
     </>
   );

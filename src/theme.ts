@@ -15,6 +15,7 @@ export const theme = {
     color: {
       default: "#313131",
       secondary: "#eeeeee",
+      error: "#FF3333",
     },
     letterSpacing: {
       mainTitle: "8px",
