@@ -14,18 +14,25 @@ type EmailFormTypes = {
 export const EmailForm: React.FC = () => {
   const methods = useForm<EmailFormTypes>({
     mode: "onBlur",
-    reValidateMode: "onBlur",
+    reValidateMode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      content: "",
+    },
   });
-  const { handleSubmit } = methods;
+  const { handleSubmit, reset } = methods;
 
   const onSubmit: SubmitHandler<EmailFormTypes> = async (input) => {
-    const result = await emailjs.send(
-      process.env.EMAILJS_SERVICE_ID!,
-      process.env.EMAILJS_TEMPLATE_ID!,
-      { message: input.content },
-      process.env.EMAILJS_PUBLIC_KEY!
-    );
-    console.log(result);
+    // const result = await emailjs.send(
+    //   process.env.EMAILJS_SERVICE_ID!,
+    //   process.env.EMAILJS_TEMPLATE_ID!,
+    //   { message: input.content },
+    //   process.env.EMAILJS_PUBLIC_KEY!
+    // );
+    // console.log('email result',result);
+    console.log("input value", input);
+    reset();
   };
 
   return (
