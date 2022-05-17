@@ -6,6 +6,7 @@ export const RInput: React.FC<InputType> = ({ name, label, placeholder }) => {
   return (
     <Controller
       name={name}
+      rules={{ required: `${label}は必須です。` }}
       render={({ field: { name, value, onChange, onBlur } }) => (
         <Input
           name={name}

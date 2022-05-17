@@ -10,6 +10,7 @@ export const RTextArea: React.FC<TextAreaType> = ({
   return (
     <Controller
       name={name}
+      rules={{ required: `${label}は必須です。` }}
       render={({ field: { name, value, onChange, onBlur } }) => (
         <TextArea
           name={name}
