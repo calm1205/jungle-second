@@ -1,12 +1,16 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import { theme } from "~/theme";
+import { Box } from "./Box";
+import { FormErrorMessage } from "./FormErrorMessage";
 import { Label } from "./Label";
+import { StyledTextArea } from "./StyledTextArea";
 
 export type TextAreaType = {
   name: string;
   label: string;
   placeholder?: string;
   value?: string;
+  error?: string;
   onChange?: () => void;
   onBlur?: () => void;
 };
@@ -16,6 +20,7 @@ export const TextArea: React.FC<TextAreaType> = ({
   label,
   placeholder,
   value,
+  error,
   onChange,
   onBlur,
 }) => {
@@ -29,29 +34,10 @@ export const TextArea: React.FC<TextAreaType> = ({
           onChange={onChange}
           onBlur={onBlur}
         />
+        <Box marginTop={theme.space.xs}>
+          <FormErrorMessage children={error} />
+        </Box>
       </Label>
     </>
   );
 };
-
-const StyledTextArea = styled.textarea`
-  ${({ theme }) =>
-    css`
-      color: ${theme.font.color.default};
-      letter-spacing: 2px;
-      font-family: ${theme.font.family.default};
-
-      border: solid 1px ${theme.input.border.color.default};
-
-      background-color: inherit;
-      padding: ${theme.space.xs};
-      margin-top: ${theme.space.xs};
-      box-sizing: border-box;
-      width: 100%;
-      resize: vertical;
-
-      :focus {
-        outline: none;
-      }
-    `}
-`;
