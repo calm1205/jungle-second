@@ -10,6 +10,7 @@ export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 
+export { StyledInput } from "./StyledInput";
 export { Input } from "./Input";
 export { InputType } from "./Input";
 
