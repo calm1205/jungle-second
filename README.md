@@ -12,4 +12,8 @@ https://www.aman.com/ja-jp/hotels/aman-tokyo?utm_content=20220315-Spring+ads-RSA
 
 https://terrace-h.co.jp/
 
+## Emailjs
 https://www.emailjs.com/
+
+## Github pages deploy
+https://github.com/rafgraph/spa-github-pages
