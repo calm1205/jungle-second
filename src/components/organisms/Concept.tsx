@@ -6,7 +6,7 @@ import { ImageGallery } from "../molecules";
 export const Concept: React.FC = () => {
   return (
     <Box padding={`${theme.space.xl} 0`} textAlign="center">
-      <ImageGallery images={[]} />
+      <ImageGallery />
 
       <Title text={`気品と優美さを\n組み込んだ\n洗礼された空間`} />
 
