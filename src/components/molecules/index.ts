@@ -12,5 +12,6 @@ export { RecruitPreview } from "./RecruitPreview";
 export { FeeLi } from "./FeeLi";
 export { FeeLiType } from "./FeeLi";
 export { FeeUl } from "./FeeUl";
-export { FeeUlType } from "./FeeUl";
 export { FeeSection } from "./FeeSection";
+
+export { ImageGallery } from "./ImageGallery";

@@ -26,7 +26,7 @@ export const BackgroundImage: React.FC<BackgroundImageType> = ({
 };
 
 const Wrapper = styled.div<BackgroundImageType>`
-  background-size: contain;
+  background-size: cover;
   background-image: url(${({ image }) => image});
   background-repeat: no-repeat;
 
