@@ -1,13 +1,10 @@
 import React from "react";
 import { Box, Paragraph, Title } from "~/components/atoms";
 import { theme } from "~/theme";
-import { ImageGallery } from "../molecules";
 
 export const Concept: React.FC = () => {
   return (
     <Box padding={`${theme.space.xl} 0`} textAlign="center">
-      <ImageGallery />
-
       <Title text={`気品と優美さを\n組み込んだ\n洗礼された空間`} />
 
       <Paragraph
