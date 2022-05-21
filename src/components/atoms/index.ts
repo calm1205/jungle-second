@@ -11,6 +11,12 @@ export { SubTitle } from "./Title/SubTitle";
 export { BackgroundImage } from "./Background/BackgroundImage";
 export { BackgroundWhite } from "./Background/BackgroundWhite";
 
+/**
+ * Input
+ */
+export { StyledInput } from "./Input/StyledInput";
+export { StyledTextArea } from "./Input/StyledTextArea";
+
 export { Box } from "./Box";
 export { Dots } from "./Dots";
 export { Paragraph } from "./Paragraph";
@@ -19,9 +25,3 @@ export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 export { Hr } from "./Hr";
-
-/**
- * Input
- */
-export { StyledInput } from "./Input/StyledInput";
-export { StyledTextArea } from "./Input/StyledTextArea";
