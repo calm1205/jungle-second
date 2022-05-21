@@ -11,6 +11,7 @@ export const theme = {
     family: {
       default: "serif",
       secondary: "sans-serif",
+      crusive: "Tangerine",
     },
     color: {
       default: "#313131",
@@ -22,6 +23,13 @@ export const theme = {
       title: "4px",
       paragraph: "2px",
     },
+  },
+
+  /**
+   * 区切り線
+   */
+  hr: {
+    color: "#404040",
   },
 
   /**

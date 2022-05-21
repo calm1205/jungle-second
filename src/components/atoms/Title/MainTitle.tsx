@@ -5,6 +5,9 @@ type MainTitleType = {
   text: string;
 };
 
+/**
+ * 画面全体のタイトル
+ */
 export const MainTitle: React.FC<MainTitleType> = ({ text }) => {
   return <H1>{text}</H1>;
 };

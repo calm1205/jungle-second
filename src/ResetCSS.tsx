@@ -11,6 +11,9 @@ const globalStyle = css`
     font-family: ${theme.font.family.default};
     background-color: ${theme.background.color.main};
   }
+  * {
+    box-sizing: border-box;
+  }
 `;
 
 export default createGlobalStyle`${globalStyle}`;
