@@ -1,6 +1,6 @@
 import React from "react";
 import { Controller } from "react-hook-form";
-import { Input, InputType } from "~/components/atoms";
+import { Input, InputType } from "~/components/molecules";
 
 export const RInput: React.FC<InputType> = ({ name, label, placeholder }) => {
   return (

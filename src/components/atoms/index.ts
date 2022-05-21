@@ -11,9 +11,4 @@ export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 
 export { StyledInput } from "./StyledInput";
-export { Input } from "./Input";
-export { InputType } from "./Input";
-
 export { StyledTextArea } from "./StyledTextArea";
-export { TextArea } from "./TextArea";
-export { TextAreaType } from "./TextArea";

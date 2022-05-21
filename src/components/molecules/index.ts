@@ -9,3 +9,9 @@ export { Contact } from "./Contact";
 export { Fee } from "./Fee";
 export { RecruitPreview } from "./RecruitPreview";
 export { EmailForm } from "./EmailForm";
+
+export { Input } from "./Input";
+export { InputType } from "./Input";
+
+export { TextArea } from "./TextArea";
+export { TextAreaType } from "./TextArea";
