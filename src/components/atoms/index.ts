@@ -20,5 +20,8 @@ export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 export { Hr } from "./Hr";
 
-export { StyledInput } from "./StyledInput";
-export { StyledTextArea } from "./StyledTextArea";
+/**
+ * Input
+ */
+export { StyledInput } from "./Input/StyledInput";
+export { StyledTextArea } from "./Input/StyledTextArea";
