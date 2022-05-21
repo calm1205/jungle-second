@@ -1,6 +1,6 @@
 import React from "react";
 import { Controller } from "react-hook-form";
-import { TextAreaType, TextArea } from "~/components/atoms";
+import { TextAreaType, TextArea } from "~/components/molecules";
 
 export const RTextArea: React.FC<TextAreaType> = ({
   name,

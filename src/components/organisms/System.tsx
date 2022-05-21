@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BackgroundWhite, Box, Title } from "~/components/atoms";
-import { Fee } from "~/components/molecules";
+import { Fee } from "~/components/organisms";
 import { theme } from "~/theme";
 
 export const System: React.FC = () => {

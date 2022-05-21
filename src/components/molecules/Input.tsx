@@ -1,9 +1,9 @@
 import React from "react";
 import { theme } from "~/theme";
-import { Box } from "./Box";
-import { FormErrorMessage } from "./FormErrorMessage";
-import { Label } from "./Label";
-import { StyledInput } from "./StyledInput";
+import { Box } from "../atoms/Box";
+import { FormErrorMessage } from "../atoms/FormErrorMessage";
+import { Label } from "../atoms/Label";
+import { StyledInput } from "../atoms/StyledInput";
 
 export type InputType = {
   name: string;

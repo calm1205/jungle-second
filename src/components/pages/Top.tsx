@@ -7,7 +7,7 @@ import {
   Recruit,
   Access,
   Contact,
-} from "~/components/molecules";
+} from "~/components/organisms";
 import { Footer } from "../templates/Footer";
 
 const Top: React.FC = () => {
