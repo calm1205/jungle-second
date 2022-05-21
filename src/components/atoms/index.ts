@@ -14,6 +14,7 @@ export { BackgroundWhite } from "./BackgroundWhite";
 export { Box } from "./Box";
 export { Dots } from "./Dots";
 export { Paragraph } from "./Paragraph";
+export { Footnote } from "./Footnote";
 export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
