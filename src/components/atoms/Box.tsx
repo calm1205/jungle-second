@@ -4,8 +4,13 @@ import * as CSS from "csstype";
 
 type BoxType = {
   children?: ReactNode;
+  marginX?: string;
+  marginY?: string;
+  paddingX?: string;
+  paddingY?: string;
 } & Pick<
   CSS.Properties,
+  | "width"
   | "height"
   | "margin"
   | "marginTop"
@@ -32,8 +37,9 @@ export const Box: React.FC<BoxType> = (props) => {
   return <Div {...styles}>{children}</Div>;
 };
 
-const Div = styled.div<CSS.Properties>`
+const Div = styled.div<Omit<BoxType, "children">>`
   ${(styles) => css`
+    width: ${styles.width};
     height: ${styles.height ?? "100%"};
 
     margin: ${styles.margin};
@@ -41,12 +47,16 @@ const Div = styled.div<CSS.Properties>`
     margin-left: ${styles.marginLeft};
     margin-right: ${styles.marginRight};
     margin-bottom: ${styles.marginBottom};
+    margin: ${styles.marginX && `0 ${styles.marginX}`};
+    margin: ${styles.marginY && `${styles.marginY} 0`};
 
     padding: ${styles.padding};
     padding-top: ${styles.paddingTop};
     padding-left: ${styles.paddingLeft};
     padding-right: ${styles.paddingRight};
     padding-bottom: ${styles.paddingBottom};
+    padding: ${styles.paddingX && `0 ${styles.paddingX}`};
+    padding: ${styles.paddingY && `${styles.paddingY} 0`};
 
     display: ${styles.display};
     justify-content: ${styles.justifyContent};
