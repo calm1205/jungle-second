@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BackgroundWhite, Box, Title } from "~/components/atoms";
 import { theme } from "~/theme";
-import { RecruitPreview } from "./RecruitPreview";
+import { RecruitPreview } from "../molecules/RecruitPreview";
 import { recruit1, recruit2, recruit3 } from "~/public/images";
 
 export const Recruit: React.FC = () => {
