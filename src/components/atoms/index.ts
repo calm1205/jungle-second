@@ -8,8 +8,8 @@ export { SubTitle } from "./Title/SubTitle";
 /**
  * Background
  */
-export { BackgroundImage } from "./BackgroundImage";
-export { BackgroundWhite } from "./BackgroundWhite";
+export { BackgroundImage } from "./Background/BackgroundImage";
+export { BackgroundWhite } from "./Background/BackgroundWhite";
 
 export { Box } from "./Box";
 export { Dots } from "./Dots";
