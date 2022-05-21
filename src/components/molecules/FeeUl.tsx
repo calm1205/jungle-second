@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { FeeLi, FeeLiType } from "~/components/molecules";
 
-export type FeeUlType = {
+type FeeUlType = {
   lists: FeeLiType[];
 };
 
