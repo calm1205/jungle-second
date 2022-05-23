@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Line } from "~/components/atoms";
 
-type Menu = {
+type MenuButton = {
   onClick: () => void;
 };
 
-export const Menu: React.FC<Menu> = ({ onClick }) => {
+export const MenuButton: React.FC<MenuButton> = ({ onClick }) => {
   return (
     <Box
       width="70px"

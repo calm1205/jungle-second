@@ -1,7 +1,7 @@
 import React from "react";
 import { theme } from "~/theme";
 import { Box, Paragraph, Title } from "~/components/atoms";
-import { ImageGallery, Menu } from "~/components/molecules";
+import { ImageGallery } from "~/components/molecules";
 
 export const Concept: React.FC = () => {
   return (

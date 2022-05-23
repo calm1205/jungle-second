@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import styled from "styled-components";
 import { Box } from "~/components/atoms";
-import { Menu } from "~/components/molecules";
+import { MenuButton, SideMenu } from "~/components/molecules";
 import { theme } from "~/theme";
 
 export const Header: React.FC = () => {
+  const [open, setOpen] = useState(true);
+  const onOpen = useCallback(() => setOpen(true), [setOpen]);
+  const onClose = useCallback(() => setOpen(false), [setOpen]);
+
   return (
-    <FixWrapper>
-      <Box display="flex" justifyContent="right" alignItems="center">
-        <Menu onClick={() => {}} />
-      </Box>
-    </FixWrapper>
+    <>
+      <FixWrapper>
+        <Box display="flex" justifyContent="right" alignItems="center">
+          <MenuButton onClick={onOpen} />
+        </Box>
+      </FixWrapper>
+      <SideMenu isDisplay={open} onClose={onClose} />
+    </>
   );
 };
 
