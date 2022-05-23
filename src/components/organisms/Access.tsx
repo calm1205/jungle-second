@@ -1,11 +1,17 @@
 import React from "react";
 import { theme } from "~/theme";
-import { BackgroundImage, Box, Paragraph, Title } from "../atoms";
+import {
+  BackgroundImage,
+  BackgroundWhite,
+  Box,
+  Paragraph,
+  Title,
+} from "../atoms";
 import { map } from "~/public/images";
 
 export const Access: React.FC = () => {
   return (
-    <>
+    <BackgroundWhite>
       <Box paddingTop={theme.space.xl} textAlign="center">
         <Title text="Access" />
       </Box>
@@ -16,6 +22,6 @@ export const Access: React.FC = () => {
         <Paragraph text="東京都港区六本木3-15-24 belle六本木1階" marginTop="" />
         <Paragraph text="090-6022-5578" marginTop="" />
       </Box>
-    </>
+    </BackgroundWhite>
   );
 };
