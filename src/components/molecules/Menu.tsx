@@ -8,12 +8,12 @@ type Menu = {
 export const Menu: React.FC<Menu> = ({ onClick }) => {
   return (
     <Box
-      width="40px"
-      height="35px"
+      width="70px"
+      height="70px"
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      padding="10px"
+      padding="26px 24px"
       onClick={onClick}
     >
       <Line />

@@ -8,8 +8,6 @@ export const Concept: React.FC = () => {
     <Box paddingY={theme.space.xl} textAlign="center">
       <Paragraph text="日本 東京" />
 
-      <Menu onClick={() => console.log("sample")} />
-
       <Box marginY={theme.space.m}>
         <Title text="Lounge Jungle" />
       </Box>
