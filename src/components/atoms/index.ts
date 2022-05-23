@@ -17,11 +17,17 @@ export { BackgroundWhite } from "./Background/BackgroundWhite";
 export { StyledInput } from "./Input/StyledInput";
 export { StyledTextArea } from "./Input/StyledTextArea";
 
+/**
+ * Button
+ */
+export { Button } from "./Button/Button";
+export { CloseButton } from "./Button/CloseButton";
+
 export { Box } from "./Box";
 export { Dots } from "./Dots";
 export { Paragraph } from "./Paragraph";
 export { Footnote } from "./Footnote";
-export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 export { Hr } from "./Hr";
+export { Line } from "./Line";

@@ -8,6 +8,7 @@ type BoxType = {
   marginY?: string;
   paddingX?: string;
   paddingY?: string;
+  onClick?: () => void;
 } & Pick<
   CSS.Properties,
   | "width"

@@ -38,6 +38,7 @@ export const theme = {
   background: {
     color: {
       main: "#f3eee7",
+      mainRGB: "243,238,231",
       secondary: "white",
     },
   },

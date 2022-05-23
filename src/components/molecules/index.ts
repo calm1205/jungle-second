@@ -15,3 +15,5 @@ export { FeeUl } from "./FeeUl";
 export { FeeSection } from "./FeeSection";
 
 export { ImageGallery } from "./ImageGallery";
+export { MenuButton } from "./MenuButton";
+export { SideMenu } from "./SideMenu";

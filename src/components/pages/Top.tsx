@@ -5,12 +5,14 @@ import {
   Recruit,
   Access,
   Contact,
+  Header,
 } from "~/components/organisms";
 import { Footer } from "../templates/Footer";
 
 const Top: React.FC = () => {
   return (
     <>
+      <Header />
       <Concept />
       <System />
       <Recruit />
