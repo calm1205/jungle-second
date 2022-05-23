@@ -13,7 +13,6 @@ import { Footer } from "../templates/Footer";
 const Top: React.FC = () => {
   return (
     <>
-      <Heading />
       <Concept />
       <System />
       <Description />

@@ -1,8 +1,7 @@
 import React from "react";
-import { BackgroundImage, MainTitle } from "~/components/atoms";
+import { Box, BackgroundImage, MainTitle } from "~/components/atoms";
 
 import { lounge1 } from "~/public/images";
-import { Box } from "../atoms/Box";
 
 export const Heading: React.FC = () => {
   return (
