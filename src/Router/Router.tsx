@@ -14,7 +14,7 @@ export const Router: React.FC = () => {
   );
 
   return (
-    <BrowserRouter basename="Lounge_Jungle">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={suspensise(Top)} />
         <Route path="*" element={<h1>Page Not Found</h1>} />

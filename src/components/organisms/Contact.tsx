@@ -1,18 +1,19 @@
 import React from "react";
 import { theme } from "~/theme";
-import { BackgroundWhite, Box, Title } from "../atoms";
+import { Box, Id, Title } from "~/components/atoms";
 import { EmailForm } from "./EmailForm";
 
 export const Contact: React.FC = () => {
   return (
-    <BackgroundWhite>
+    <>
+      <Id id="contact" />
       <Box padding={`${theme.space.xl} 0`}>
         <Box textAlign="center">
-          <Title text="コンタクト" />
+          <Title text="Contact" />
         </Box>
 
         <EmailForm />
       </Box>
-    </BackgroundWhite>
+    </>
   );
 };

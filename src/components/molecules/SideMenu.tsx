@@ -28,11 +28,25 @@ export const SideMenu: React.FC<SideMenuType> = ({
         paddingTop="calc(25vh - 70px)"
         paddingBottom="25vh"
       >
-        <SubTitle text="Home" />
-        <SubTitle text="System" />
-        <SubTitle text="Recruit" />
-        <SubTitle text="Access" />
-        <SubTitle text="Contact" />
+        <a href="#home" onClick={onClose}>
+          <SubTitle text="Home" />
+        </a>
+
+        <a href="#system" onClick={onClose}>
+          <SubTitle text="System" />
+        </a>
+
+        <a href="#recruit" onClick={onClose}>
+          <SubTitle text="Recruit" />
+        </a>
+
+        <a href="#access" onClick={onClose}>
+          <SubTitle text="Access" />
+        </a>
+
+        <a href="#contact" onClick={onClose}>
+          <SubTitle text="Contact" />
+        </a>
       </Box>
     </FixWrapper>
   );

@@ -1,12 +1,20 @@
 import React from "react";
-import { BackgroundWhite, Box, Footnote, Hr, Title } from "~/components/atoms";
+import {
+  BackgroundWhite,
+  Box,
+  Footnote,
+  Hr,
+  Id,
+  Title,
+} from "~/components/atoms";
 import { theme } from "~/theme";
 import { FeeUl, FeeSection } from "~/components/molecules";
 
 export const System: React.FC = () => {
   return (
     <BackgroundWhite>
-      <Box paddingY={theme.space.l} textAlign="center">
+      <Id id="system" />
+      <Box paddingY={theme.space.xl} textAlign="center">
         <Title text="System" />
       </Box>
 
