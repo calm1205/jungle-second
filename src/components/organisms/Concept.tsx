@@ -2,11 +2,16 @@ import React from "react";
 import { theme } from "~/theme";
 import { Box, Paragraph, Title } from "~/components/atoms";
 import { ImageGallery } from "~/components/molecules";
+import { Line } from "../atoms/Line";
 
 export const Concept: React.FC = () => {
   return (
     <Box paddingY={theme.space.xl} textAlign="center">
       <Paragraph text="日本 東京" />
+
+      <Box width="300px" height={"30px"}>
+        <Line />
+      </Box>
 
       <Box marginY={theme.space.m}>
         <Title text="Lounge Jungle" />

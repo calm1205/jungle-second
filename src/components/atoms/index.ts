@@ -25,3 +25,4 @@ export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 export { Hr } from "./Hr";
+export { Line } from "./Line";
