@@ -1,9 +1,7 @@
 import React from "react";
 import {
   Concept,
-  Heading,
   System,
-  Description,
   Recruit,
   Access,
   Contact,
@@ -15,7 +13,6 @@ const Top: React.FC = () => {
     <>
       <Concept />
       <System />
-      <Description />
       <Recruit />
       <Access />
       <Contact />
