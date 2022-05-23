@@ -1,13 +1,12 @@
 import React from "react";
-import styled from "styled-components";
-import { BackgroundWhite, Box, Title } from "~/components/atoms";
+import { Box, Title } from "~/components/atoms";
 import { theme } from "~/theme";
 import { RecruitPreview } from "../molecules/RecruitPreview";
 import { recruit1, recruit2, recruit3 } from "~/public/images";
 
 export const Recruit: React.FC = () => {
   return (
-    <BackgroundWhite>
+    <>
       <Box paddingTop={theme.space.xl} textAlign="center">
         <Title text="採用" />
       </Box>
@@ -46,6 +45,6 @@ export const Recruit: React.FC = () => {
       </Box>
 
       <Box paddingBottom={theme.space.xl} />
-    </BackgroundWhite>
+    </>
   );
 };

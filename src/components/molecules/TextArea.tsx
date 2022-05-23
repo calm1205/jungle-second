@@ -1,9 +1,11 @@
 import React from "react";
 import { theme } from "~/theme";
-import { Box } from "../atoms/Box";
-import { FormErrorMessage } from "../atoms/FormErrorMessage";
-import { Label } from "../atoms/Label";
-import { StyledTextArea } from "../atoms/StyledTextArea";
+import {
+  Box,
+  FormErrorMessage,
+  Label,
+  StyledTextArea,
+} from "~/components/atoms";
 
 export type TextAreaType = {
   name: string;

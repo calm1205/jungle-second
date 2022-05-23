@@ -8,8 +8,14 @@ export { SubTitle } from "./Title/SubTitle";
 /**
  * Background
  */
-export { BackgroundImage } from "./BackgroundImage";
-export { BackgroundWhite } from "./BackgroundWhite";
+export { BackgroundImage } from "./Background/BackgroundImage";
+export { BackgroundWhite } from "./Background/BackgroundWhite";
+
+/**
+ * Input
+ */
+export { StyledInput } from "./Input/StyledInput";
+export { StyledTextArea } from "./Input/StyledTextArea";
 
 export { Box } from "./Box";
 export { Dots } from "./Dots";
@@ -19,6 +25,3 @@ export { Button } from "./Button";
 export { Label } from "./Label";
 export { FormErrorMessage } from "./FormErrorMessage";
 export { Hr } from "./Hr";
-
-export { StyledInput } from "./StyledInput";
-export { StyledTextArea } from "./StyledTextArea";

@@ -1,21 +1,24 @@
 import React from "react";
-import { Box, Paragraph, Title } from "~/components/atoms";
 import { theme } from "~/theme";
+import { Box, Paragraph, Title } from "~/components/atoms";
+import { ImageGallery } from "~/components/molecules";
 
 export const Concept: React.FC = () => {
   return (
-    <Box padding={`${theme.space.xl} 0`} textAlign="center">
-      <Title text={`気品と優美さを\n組み込んだ\n洗礼された空間`} />
+    <Box paddingY={theme.space.xl} textAlign="center">
+      <Paragraph text="日本 東京" />
+
+      <Box marginY={theme.space.m}>
+        <Title text="Lounge Jungle" />
+      </Box>
 
       <Paragraph
-        text="高級ホテルに居るかのような店内は"
-        marginTop={theme.space.l}
+        text={`気品と優美さを組み込んだ洗礼された空間\n高級ホテルに居るかのような店内は\n高級感もありながら落ち着いた雰囲気で\n特別なひとときをお過ごし頂けます。\nぜひワンランク上のラグジュアリーな空間を\nお楽しみください。`}
       />
-      <Paragraph text="高級感もありながら落ち着いた雰囲気で" />
-      <Paragraph text="特別なひとときをお過ごし頂けます。" />
 
-      <Paragraph text="ぜひワンランク上の" />
-      <Paragraph text="ラグジュアリーな空間をお楽しみください。" />
+      <Box marginTop={theme.space.l}>
+        <ImageGallery />
+      </Box>
     </Box>
   );
 };
