@@ -15,7 +15,7 @@ export const SideMenu: React.FC<SideMenuType> = ({
     <FixWrapper isDisplay={isDisplay}>
       <Box display="flex" justifyContent="right" height="70px">
         <Box padding="20px">
-          <CloseButton />
+          <CloseButton onClick={onClose} />
         </Box>
       </Box>
 
