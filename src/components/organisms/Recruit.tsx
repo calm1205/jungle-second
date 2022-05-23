@@ -8,7 +8,7 @@ export const Recruit: React.FC = () => {
   return (
     <>
       <Box paddingTop={theme.space.xl} textAlign="center">
-        <Title text="採用" />
+        <Title text="Recruit" />
       </Box>
 
       <Box padding={theme.space.m}>

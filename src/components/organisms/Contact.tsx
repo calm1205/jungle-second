@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
     <BackgroundWhite>
       <Box padding={`${theme.space.xl} 0`}>
         <Box textAlign="center">
-          <Title text="コンタクト" />
+          <Title text="Contact" />
         </Box>
 
         <EmailForm />

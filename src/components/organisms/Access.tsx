@@ -7,7 +7,7 @@ export const Access: React.FC = () => {
   return (
     <>
       <Box paddingTop={theme.space.xl} textAlign="center">
-        <Title text="アクセス" />
+        <Title text="Access" />
       </Box>
 
       <Box padding={theme.space.m} paddingBottom={theme.space.xl}>
