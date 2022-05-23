@@ -15,7 +15,7 @@ export const FeeSection: React.FC<FeeSection> = ({ title, fees }) => {
   return (
     <Box display="flex" justifyContent="space-between" alignItems="center">
       <Box width="40%" textAlign="center">
-        <SubTitle text={title} isCrusive />
+        <SubTitle text={title} />
       </Box>
 
       <Box width="45%">

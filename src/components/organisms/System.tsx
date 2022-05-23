@@ -6,8 +6,8 @@ import { FeeUl, FeeSection } from "~/components/molecules";
 export const System: React.FC = () => {
   return (
     <BackgroundWhite>
-      <Box paddingY={theme.space.xl} textAlign="center">
-        <Title text="System" isCrusive />
+      <Box paddingY={theme.space.l} textAlign="center">
+        <Title text="System" />
       </Box>
 
       <Box paddingX={theme.space.m}>
