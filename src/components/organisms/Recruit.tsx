@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Title } from "~/components/atoms";
+import { Box, Id, Title } from "~/components/atoms";
 import { theme } from "~/theme";
 import { RecruitPreview } from "../molecules/RecruitPreview";
 import { recruit1, recruit2, recruit3 } from "~/public/images";
@@ -7,6 +7,7 @@ import { recruit1, recruit2, recruit3 } from "~/public/images";
 export const Recruit: React.FC = () => {
   return (
     <>
+      <Id id="recruit" />
       <Box paddingTop={theme.space.xl} textAlign="center">
         <Title text="Recruit" />
       </Box>

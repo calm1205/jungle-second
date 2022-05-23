@@ -4,14 +4,16 @@ import {
   BackgroundImage,
   BackgroundWhite,
   Box,
+  Id,
   Paragraph,
   Title,
-} from "../atoms";
+} from "~/components/atoms";
 import { map } from "~/public/images";
 
 export const Access: React.FC = () => {
   return (
     <BackgroundWhite>
+      <Id id="access" />
       <Box paddingTop={theme.space.xl} textAlign="center">
         <Title text="Access" />
       </Box>

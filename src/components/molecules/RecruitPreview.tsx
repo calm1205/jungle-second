@@ -1,6 +1,6 @@
 import React from "react";
 import { theme } from "~/theme";
-import { BackgroundImage, Box, Button, Paragraph, SubTitle } from "../atoms";
+import { BackgroundImage, Box, Button, SubTitle } from "~/components/atoms";
 
 type RecruitPreviewType = {
   image: string;
