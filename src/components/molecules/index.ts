@@ -15,3 +15,4 @@ export { FeeUl } from "./FeeUl";
 export { FeeSection } from "./FeeSection";
 
 export { ImageGallery } from "./ImageGallery";
+export { Menu } from "./Menu";
