@@ -51,6 +51,9 @@ export const theme = {
       color: "#eeeeee",
       bg: "#404040",
     },
+    border: {
+      color: "#404040",
+    },
   },
 
   /**
