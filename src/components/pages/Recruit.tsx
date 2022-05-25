@@ -1,15 +1,16 @@
 import React from "react";
 import { BackgroundImage, Box, MainTitle } from "~/components/atoms";
-import { RecruitDetail, Tabs } from "~/components/molecules";
+import { Tabs } from "~/components/molecules";
 import { MainLayout } from "~/components/templates";
 import { lounge1 } from "~/public/images";
 import { theme } from "~/theme";
+import { Cast, Employee, Staff } from "~/components/organisms";
 
 const Recruit: React.FC = () => {
   const tabContents = [
-    { name: "Cast", content: <RecruitDetail /> },
-    { name: "Employee", content: <RecruitDetail /> },
-    { name: "Staff", content: <RecruitDetail /> },
+    { name: "Cast", content: <Cast /> },
+    { name: "Employee", content: <Employee /> },
+    { name: "Staff", content: <Staff /> },
   ];
 
   return (

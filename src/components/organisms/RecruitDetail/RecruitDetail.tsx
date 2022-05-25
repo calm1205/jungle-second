@@ -1,43 +1,44 @@
 import React from "react";
-import { Box, Footnote, Heading, Paragraph, Title } from "~/components/atoms";
+import { Box, Footnote, Title } from "~/components/atoms";
 import { theme } from "~/theme";
-import { HeadingParagraph } from "./HeadingParagraph";
+import { HeadingParagraph } from "../../molecules/HeadingParagraph";
 
-export const RecruitDetail: React.FC = () => {
+type Props = {
+  footnote: string;
+  title: string;
+  time: string;
+  payment: string;
+  holiday: string;
+  treatment: string;
+};
+
+export const RecruitDetail: React.FC<Props> = ({
+  footnote,
+  title,
+  time,
+  payment,
+  holiday,
+  treatment,
+}) => {
   return (
     <Box padding={` ${theme.space.l} ${theme.space.m}`}>
-      <Footnote text="キャスト" marginTop="0" />
-      <Title text="Cast" />
+      <Footnote text={footnote} marginTop="0" />
+      <Title text={title} />
 
       <Box marginTop={theme.space.l}>
-        <HeadingParagraph title="勤務時間" text="20:00 〜 翌日1:00" />
+        <HeadingParagraph title="勤務時間" text={time} />
       </Box>
 
       <Box marginTop={theme.space.l}>
-        <Heading text="給与" />
-        <Box marginLeft={theme.space.s}>
-          <Paragraph text="時給10,000円〜" marginTop={theme.space.xs} />
-        </Box>
+        <HeadingParagraph title="給与" text={payment} />
       </Box>
 
       <Box marginTop={theme.space.l}>
-        <Heading text="休日" />
-        <Box marginLeft={theme.space.s}>
-          <Paragraph
-            text="日・GW・夏休暇・年末年始休暇"
-            marginTop={theme.space.xs}
-          />
-        </Box>
+        <HeadingParagraph title="休日" text={holiday} />
       </Box>
 
       <Box marginTop={theme.space.l}>
-        <Heading text="待遇" />
-        <Box marginLeft={theme.space.s}>
-          <Paragraph
-            text={`全額日払い\n体入時給10,000円以上\n各種高額バック有り\n週1/2h〜OK\n短期OK\nヘアメ完備\n鍵付きの個人ロッカー完備\n前店の給与を考慮\n送迎有り(都外可)`}
-            marginTop={theme.space.xs}
-          />
-        </Box>
+        <HeadingParagraph title="待遇" text={treatment} />
       </Box>
     </Box>
   );

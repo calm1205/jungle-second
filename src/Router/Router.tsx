@@ -1,6 +1,5 @@
 import React, { lazy, Suspense, useCallback } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { RecruitDetail } from "~/components/molecules";
 
 export const Router: React.FC = () => {
   const Top = lazy(() => import("~/components/pages/Top"));
