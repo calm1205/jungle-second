@@ -5,7 +5,7 @@ import { HeadingParagraph } from "./HeadingParagraph";
 
 export const RecruitDetail: React.FC = () => {
   return (
-    <>
+    <Box padding={` ${theme.space.l} ${theme.space.m}`}>
       <Footnote text="キャスト" marginTop="0" />
       <Title text="Cast" />
 
@@ -39,7 +39,7 @@ export const RecruitDetail: React.FC = () => {
           />
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

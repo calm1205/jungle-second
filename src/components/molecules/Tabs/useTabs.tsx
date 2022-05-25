@@ -1,44 +1,38 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 
 /**
- * @param num - tabの数
- * @param index - activeに更新するindex
- * @returns - tabのboolean[]
+ * lengthの長さのboolean[]
+ * initialのindexだけtrue
  */
-const _setSelectedTab = (num: number, index: number) => {
-  const falseArray = [...Array(num)].map(() => false);
-  falseArray[index] = true;
-  return falseArray;
-};
+const _initialaizeTabs = (length: number, initial: number) =>
+  [...Array(length)].map((_, i) => {
+    if (i === initial) return true;
+    return false;
+  });
+
+const _activeIndex = (array: boolean[]) => array.findIndex((_) => _ === true);
 
 type UseTabs = (
-  tabNumber: number,
+  tabLength: number,
   initialActiveIndex: number
-) => { isActive: boolean; onClick: () => void }[];
+) => [{ isActive: boolean; onClick: () => void }[], number];
 
 /**
  * Tabsの選択ロジック
  */
-export const useTabs: UseTabs = (tabNumber, initialActiveIndex) => {
-  const initialTabs = _setSelectedTab(tabNumber, initialActiveIndex);
+export const useTabs: UseTabs = (tabLength, initialActiveIndex) => {
+  const initialTabs = _initialaizeTabs(tabLength, initialActiveIndex);
   const [tabs, setTabs] = useState(initialTabs);
 
-  /**
-   * indexをactiveに更新
-   * @param index
-   */
-  const setActiveTab = useCallback(
-    (index: number) => {
-      const updateTab = _setSelectedTab(tabNumber, index);
-      setTabs(updateTab);
-    },
-    [setTabs]
-  );
-
-  return [...Array(tabNumber)].map((_, index) => {
+  const tabInfo = initialTabs.map((_, index) => {
+    const newTab = _initialaizeTabs(tabLength, index);
     return {
       isActive: tabs[index],
-      onClick: () => setActiveTab(index),
+      onClick: () => setTabs(newTab),
     };
   });
+
+  const tabIndex = _activeIndex(tabs);
+
+  return [tabInfo, tabIndex];
 };

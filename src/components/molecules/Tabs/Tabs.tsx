@@ -1,4 +1,4 @@
-import React, { Fragment, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { Box, Tab } from "~/components/atoms";
 import { useTabs } from "./useTabs";
 import { Edge } from "./Edge";
@@ -14,7 +14,7 @@ type Props = {
 
 export const Tabs: React.FC<Props> = ({ tabContents, initialActiveIndex }) => {
   const tabLength = tabContents.length;
-  const tabs = useTabs(tabLength, initialActiveIndex);
+  const [tabs, tabIndex] = useTabs(tabLength, initialActiveIndex);
 
   return (
     <>
@@ -30,9 +30,7 @@ export const Tabs: React.FC<Props> = ({ tabContents, initialActiveIndex }) => {
         ))}
         <Edge />
       </Box>
-      {tabContents.map((t, i) => (
-        <Fragment key={`tab_content_${i}`}>{t.content}</Fragment>
-      ))}
+      {tabContents[tabIndex].content}
     </>
   );
 };

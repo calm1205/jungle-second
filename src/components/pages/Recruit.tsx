@@ -28,10 +28,6 @@ const Recruit: React.FC = () => {
       <Box marginTop={theme.space.l}>
         <Tabs tabContents={tabContents} initialActiveIndex={0} />
       </Box>
-
-      <Box padding={` ${theme.space.l} ${theme.space.m}`}>
-        <RecruitDetail />
-      </Box>
     </MainLayout>
   );
 };
