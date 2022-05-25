@@ -8,7 +8,8 @@ export const Button = styled.button`
     font-size: 1.5rem;
     letter-spacing: 2px;
 
-    border: 1px solid ${theme.button.border.color};
-    background-color: inherit;
+    color: white;
+    border: none;
+    background-color: ${theme.color.main};
   `}
 `;

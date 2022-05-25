@@ -52,19 +52,6 @@ export const theme = {
   },
 
   /**
-   * ボタン
-   */
-  button: {
-    main: {
-      color: "#eeeeee",
-      bg: "#404040",
-    },
-    border: {
-      color: "#404040",
-    },
-  },
-
-  /**
    * フォーム
    */
   input: {

@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Id, Title } from "~/components/atoms";
+import { Link } from "react-router-dom";
+import { Box, Button, Id, Title } from "~/components/atoms";
 import { theme } from "~/theme";
 import { RecruitPreview } from "./RecruitPreview";
 import { recruit1, recruit2, recruit3 } from "~/public/images";
@@ -13,15 +14,25 @@ export const RecruitPreviews: React.FC = () => {
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="Cast" image={recruit1} />
+        <RecruitPreview title="Cast" text="キャスト" image={recruit1} />
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="Employee" image={recruit3} />
+        <RecruitPreview title="Employee" text="正社員" image={recruit3} />
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="Staff" image={recruit2} />
+        <RecruitPreview
+          title="Staff"
+          text="ホールスタッフ（アルバイト）"
+          image={recruit2}
+        />
+      </Box>
+
+      <Box paddingX={theme.space.m}>
+        <Link to={"/recruit"}>
+          <Button>view more</Button>
+        </Link>
       </Box>
 
       <Box paddingBottom={theme.space.xl} />
