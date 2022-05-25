@@ -5,14 +5,15 @@ import { theme } from "~/theme";
 type TabType = {
   text: string;
   isActive: boolean;
+  onClick?: () => void;
 };
 
 /**
  * Tabの最小単位 - Tabsでラップして活用
  */
-export const Tab: React.FC<TabType> = ({ text, isActive }) => {
+export const Tab: React.FC<TabType> = ({ text, isActive, onClick }) => {
   const ReturnTab = isActive ? ActiveTab : InActiveTab;
-  return <ReturnTab>{text}</ReturnTab>;
+  return <ReturnTab onClick={onClick}>{text}</ReturnTab>;
 };
 
 const TabStyle = styled.div`
