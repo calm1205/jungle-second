@@ -1,11 +1,20 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 
-/**
- * 右上にメニューアイコン
- * 最下部にフッター
- */
-const MainLayout: React.FC = () => {
-  return <></>;
+type MainLayout = {
+  children: ReactNode;
 };
 
-export default MainLayout;
+/**
+ * ヘッダー & フッター
+ */
+export const MainLayout: React.FC<MainLayout> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};

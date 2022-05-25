@@ -5,21 +5,18 @@ import {
   Recruit,
   Access,
   Contact,
-  Header,
 } from "~/components/organisms";
-import { Footer } from "../templates/Footer";
+import { MainLayout } from "~/components/templates";
 
 const Top: React.FC = () => {
   return (
-    <>
-      <Header />
+    <MainLayout>
       <Concept />
       <System />
       <Recruit />
       <Access />
       <Contact />
-      <Footer>© Lounge Jungle All rights reserved.</Footer>
-    </>
+    </MainLayout>
   );
 };
 

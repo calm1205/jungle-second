@@ -8,6 +8,9 @@ type FootnoteType = {
   marginTop?: string;
 };
 
+/**
+ * 脚注
+ */
 export const Footnote: React.FC<FootnoteType> = ({
   text,
   marginTop = theme.space.s,

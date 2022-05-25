@@ -1,4 +1,3 @@
-export { Header } from "./Header";
 export { Concept } from "./Concept";
 export { System } from "./System";
 export { Recruit } from "./Recruit";
