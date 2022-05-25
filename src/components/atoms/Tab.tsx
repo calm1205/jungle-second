@@ -18,6 +18,7 @@ export const Tab: React.FC<TabType> = ({ text, isActive, onClick }) => {
 
 const TabStyle = styled.div`
   width: 100%;
+  letter-spacing: 1px;
   text-align: center;
   padding-top: ${theme.space.s};
   padding-bottom: ${theme.space.s};

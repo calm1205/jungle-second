@@ -3,24 +3,18 @@ import styled, { css } from "styled-components";
 
 type SubTitleType = {
   text: string;
-  /**
-   * 英語のみ対応
-   */
-  isCrusive?: boolean;
 };
 
 /**
  * カテゴリの中でのタイトル
  */
-export const SubTitle: React.FC<SubTitleType> = ({ text, isCrusive }) => {
-  return <H3 children={text} isCrusive={isCrusive} />;
+export const SubTitle: React.FC<SubTitleType> = ({ text }) => {
+  return <H3 children={text} />;
 };
 
-type SubTitleStyle = Pick<SubTitleType, "isCrusive">;
-const H3 = styled.h3<SubTitleStyle>`
-  ${({ theme, isCrusive }) => css`
-    font-size: ${isCrusive ? "3rem" : "2.5rem"};
-    font-family: ${isCrusive && theme.font.family.crusive};
+const H3 = styled.h3`
+  ${({ theme }) => css`
+    font-size: 2.5rem;
     letter-spacing: ${theme.font.letterSpacing.paragraph};
   `}
 `;

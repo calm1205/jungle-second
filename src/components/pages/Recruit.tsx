@@ -1,8 +1,9 @@
 import React from "react";
 import { BackgroundImage, Box, MainTitle, Tab } from "~/components/atoms";
-import { Tabs } from "~/components/molecules";
+import { RecruitDetail, Tabs } from "~/components/molecules";
 import { MainLayout } from "~/components/templates";
 import { lounge1 } from "~/public/images";
+import { theme } from "~/theme";
 
 const Recruit: React.FC = () => {
   return (
@@ -19,6 +20,10 @@ const Recruit: React.FC = () => {
       </BackgroundImage>
 
       <Tabs />
+
+      <Box padding={` ${theme.space.l} ${theme.space.m}`}>
+        <RecruitDetail />
+      </Box>
     </MainLayout>
   );
 };

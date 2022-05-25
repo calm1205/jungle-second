@@ -7,6 +7,7 @@ export { TextArea } from "./TextArea";
 export { TextAreaType } from "./TextArea";
 
 export { RecruitPreview } from "./RecruitPreview";
+export { RecruitDetail } from "./RecruitDetail";
 
 export { Tabs } from "./Tabs/Tabs";
 

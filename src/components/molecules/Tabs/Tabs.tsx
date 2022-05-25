@@ -4,7 +4,7 @@ import { theme } from "~/theme";
 import { Box, Tab } from "~/components/atoms";
 import { useTabs } from "./useTabs";
 
-const TABS_NAME = ["キャスト", "正社員", "ホールスタッフ"] as const;
+const TABS_NAME = ["Cast", "Employee", "Staff"] as const;
 const tabLength = TABS_NAME.length;
 const initialActiveIndex = 0;
 
@@ -32,6 +32,6 @@ export const Tabs: React.FC = () => {
  * タブの両端
  */
 const Edge = styled.div`
-  width: ${theme.space.xl};
+  min-width: ${theme.space.m};
   border-bottom: 2px solid ${theme.color.main};
 `;

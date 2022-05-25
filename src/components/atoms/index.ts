@@ -4,6 +4,7 @@
 export { MainTitle } from "./Title/MainTitle";
 export { Title } from "./Title/Title";
 export { SubTitle } from "./Title/SubTitle";
+export { Heading } from "./Title/Heading";
 
 /**
  * Background
