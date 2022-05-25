@@ -1,10 +1,10 @@
 import React from "react";
+import { theme } from "~/theme";
+import { lounge1 } from "~/public/images";
 import { BackgroundImage, Box, MainTitle } from "~/components/atoms";
 import { Tabs } from "~/components/molecules";
-import { MainLayout } from "~/components/templates";
-import { lounge1 } from "~/public/images";
-import { theme } from "~/theme";
 import { Cast, Employee, Staff } from "~/components/organisms";
+import { MainLayout } from "~/components/templates";
 
 const Recruit: React.FC = () => {
   const tabContents = [
