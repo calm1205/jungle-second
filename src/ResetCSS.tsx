@@ -14,6 +14,7 @@ const globalStyle = css`
 
   a {
     text-decoration: none;
+    color: ${theme.font.color.default};
     :visited {
       color: ${theme.font.color.default};
     }

@@ -2,7 +2,7 @@ import React from "react";
 import {
   Concept,
   System,
-  Recruit,
+  RecruitPreviews,
   Access,
   Contact,
 } from "~/components/organisms";
@@ -13,7 +13,7 @@ const Top: React.FC = () => {
     <MainLayout>
       <Concept />
       <System />
-      <Recruit />
+      <RecruitPreviews />
       <Access />
       <Contact />
     </MainLayout>

@@ -9,7 +9,8 @@ export { EmailForm } from "./EmailForm";
 /**
  * Recruit
  */
-export { Recruit } from "./Recruit";
+export { RecruitPreviews } from "./RecruitPreviews/RecruitPreviews";
+export { RecruitPreview } from "./RecruitPreviews/RecruitPreview";
 export { RecruitDetail } from "./RecruitDetail/RecruitDetail";
 export { Cast } from "./RecruitDetail/Cast";
 export { Employee } from "./RecruitDetail/Employee";

@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Id, Title } from "~/components/atoms";
 import { theme } from "~/theme";
-import { RecruitPreview } from "../molecules/RecruitPreview";
+import { RecruitPreview } from "./RecruitPreview";
 import { recruit1, recruit2, recruit3 } from "~/public/images";
 
-export const Recruit: React.FC = () => {
+export const RecruitPreviews: React.FC = () => {
   return (
     <>
       <Id id="recruit" />
@@ -13,15 +13,15 @@ export const Recruit: React.FC = () => {
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="キャスト求人" image={recruit1} />
+        <RecruitPreview title="Cast" image={recruit1} />
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="正社員" image={recruit3} />
+        <RecruitPreview title="Employee" image={recruit3} />
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="ホールスタッフ" image={recruit2} />
+        <RecruitPreview title="Staff" image={recruit2} />
       </Box>
 
       <Box paddingBottom={theme.space.xl} />

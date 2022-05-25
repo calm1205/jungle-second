@@ -1,6 +1,6 @@
 import React from "react";
 import { theme } from "~/theme";
-import { BackgroundImage, Box, Button, SubTitle } from "~/components/atoms";
+import { BackgroundImage, Box, SubTitle } from "~/components/atoms";
 
 type RecruitPreviewType = {
   image: string;
@@ -16,14 +16,6 @@ export const RecruitPreview: React.FC<RecruitPreviewType> = ({
       <BackgroundImage image={image} size={{ height: "170px" }} />
       <Box paddingTop={theme.space.m}>
         <SubTitle text={title} />
-
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          marginY={theme.space.m}
-        >
-          <Button>View More</Button>
-        </Box>
       </Box>
     </>
   );
