@@ -1,11 +1,17 @@
 import React from "react";
-import { BackgroundImage, Box, MainTitle, Tab } from "~/components/atoms";
+import { BackgroundImage, Box, MainTitle } from "~/components/atoms";
 import { RecruitDetail, Tabs } from "~/components/molecules";
 import { MainLayout } from "~/components/templates";
 import { lounge1 } from "~/public/images";
 import { theme } from "~/theme";
 
 const Recruit: React.FC = () => {
+  const tabContents = [
+    { name: "Cast", content: <RecruitDetail /> },
+    { name: "Employee", content: <RecruitDetail /> },
+    { name: "Staff", content: <RecruitDetail /> },
+  ];
+
   return (
     <MainLayout>
       <BackgroundImage image={lounge1} size={{ height: "220px" }}>
@@ -19,7 +25,9 @@ const Recruit: React.FC = () => {
         </Box>
       </BackgroundImage>
 
-      <Tabs />
+      <Box marginTop={theme.space.l}>
+        <Tabs tabContents={tabContents} initialActiveIndex={0} />
+      </Box>
 
       <Box padding={` ${theme.space.l} ${theme.space.m}`}>
         <RecruitDetail />

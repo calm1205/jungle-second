@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useCallback } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RecruitDetail } from "~/components/molecules";
 
 export const Router: React.FC = () => {
   const Top = lazy(() => import("~/components/pages/Top"));
@@ -15,10 +16,10 @@ export const Router: React.FC = () => {
   );
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={suspensise(Top)} />
-        <Route path="/recruit" element={suspensise(Recruit)} />
+        <Route path="recruit" element={suspensise(Recruit)} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>

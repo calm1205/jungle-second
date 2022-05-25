@@ -8,7 +8,7 @@ export { TextAreaType } from "./TextArea";
 
 export { RecruitPreview } from "./RecruitPreview";
 export { RecruitDetail } from "./RecruitDetail";
-
+export { HeadingParagraph } from "./HeadingParagraph";
 export { Tabs } from "./Tabs/Tabs";
 
 /**

@@ -1,37 +1,38 @@
-import React from "react";
-import styled from "styled-components";
-import { theme } from "~/theme";
+import React, { Fragment, ReactNode } from "react";
 import { Box, Tab } from "~/components/atoms";
 import { useTabs } from "./useTabs";
+import { Edge } from "./Edge";
 
-const TABS_NAME = ["Cast", "Employee", "Staff"] as const;
-const tabLength = TABS_NAME.length;
-const initialActiveIndex = 0;
+type Tab = {
+  name: string;
+  content: ReactNode;
+};
+type Props = {
+  tabContents: Tab[];
+  initialActiveIndex: number;
+};
 
-export const Tabs: React.FC = () => {
+export const Tabs: React.FC<Props> = ({ tabContents, initialActiveIndex }) => {
+  const tabLength = tabContents.length;
   const tabs = useTabs(tabLength, initialActiveIndex);
 
   return (
-    <Box display="flex" marginTop="30px">
-      <Edge />
-      {tabs.map((tab, index) => {
-        return (
+    <>
+      <Box display="flex">
+        <Edge />
+        {tabs.map((t, i) => (
           <Tab
-            text={TABS_NAME[index]}
-            isActive={tab.isActive}
-            onClick={tab.onClick}
+            key={`tab_${i}`}
+            text={tabContents[i].name}
+            isActive={t.isActive}
+            onClick={t.onClick}
           />
-        );
-      })}
-      <Edge />
-    </Box>
+        ))}
+        <Edge />
+      </Box>
+      {tabContents.map((t, i) => (
+        <Fragment key={`tab_content_${i}`}>{t.content}</Fragment>
+      ))}
+    </>
   );
 };
-
-/**
- * タブの両端
- */
-const Edge = styled.div`
-  min-width: ${theme.space.m};
-  border-bottom: 2px solid ${theme.color.main};
-`;
