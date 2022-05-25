@@ -50,6 +50,9 @@ module.exports = {
      * pathで指定したコンパイル後のファイルを全削除してからbundleファイルを配置
      */
     clean: true,
+
+    // react-router-domに認識させるために必要
+    publicPath: "/",
   },
   /**
    * bundleファイルのsource-mapをdevtoolで確認できる。

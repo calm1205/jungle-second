@@ -16,6 +16,7 @@ const H1 = styled.h1`
   ${({ theme }) =>
     css`
       font-size: 5rem;
+      letter-spacing: 3px;
       color: ${theme.font.color.secondary};
     `}
 `;

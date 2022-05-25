@@ -2,12 +2,14 @@ import styled, { css } from "styled-components";
 
 export const Button = styled.button`
   ${({ theme }) => css`
+    width: 100%;
+    padding: ${theme.space.xs} ${theme.space.s};
+
     font-size: 1.5rem;
     letter-spacing: 2px;
-    color: ${theme.button.main.color};
-    background-color: ${theme.button.main.bg};
+
+    color: white;
     border: none;
-    padding: ${theme.space.xs} ${theme.space.s};
-    width: 100%;
+    background-color: ${theme.color.main};
   `}
 `;

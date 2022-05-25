@@ -26,6 +26,14 @@ export const theme = {
   },
 
   /**
+   * カラーリング
+   */
+  color: {
+    main: "#DEB887",
+    disabled: "gray",
+  },
+
+  /**
    * 区切り線
    */
   hr: {
@@ -40,16 +48,6 @@ export const theme = {
       main: "#f3eee7",
       mainRGB: "243,238,231",
       secondary: "white",
-    },
-  },
-
-  /**
-   * ボタン
-   */
-  button: {
-    main: {
-      color: "#eeeeee",
-      bg: "#404040",
     },
   },
 

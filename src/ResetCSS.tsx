@@ -11,6 +11,15 @@ const globalStyle = css`
     font-family: ${theme.font.family.default};
     background-color: ${theme.background.color.main};
   }
+
+  a {
+    text-decoration: none;
+    color: ${theme.font.color.default};
+    :visited {
+      color: ${theme.font.color.default};
+    }
+  }
+
   * {
     box-sizing: border-box;
   }

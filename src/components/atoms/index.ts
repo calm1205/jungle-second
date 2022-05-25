@@ -4,6 +4,7 @@
 export { MainTitle } from "./Title/MainTitle";
 export { Title } from "./Title/Title";
 export { SubTitle } from "./Title/SubTitle";
+export { Heading } from "./Title/Heading";
 
 /**
  * Background
@@ -23,6 +24,7 @@ export { StyledTextArea } from "./Input/StyledTextArea";
 export { Button } from "./Button/Button";
 export { CloseButton } from "./Button/CloseButton";
 
+export { Tab } from "./Tab";
 export { Id } from "./Id";
 export { Box } from "./Box";
 export { Dots } from "./Dots";
