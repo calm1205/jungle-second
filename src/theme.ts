@@ -26,6 +26,14 @@ export const theme = {
   },
 
   /**
+   * カラーリング
+   */
+  color: {
+    main: "#DEB887",
+    disabled: "gray",
+  },
+
+  /**
    * 区切り線
    */
   hr: {

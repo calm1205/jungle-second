@@ -1,6 +1,7 @@
 import React from "react";
+import { BackgroundImage, Box, MainTitle, Tab } from "~/components/atoms";
+import { Tabs } from "~/components/molecules";
 import { MainLayout } from "~/components/templates";
-import { BackgroundImage, Box, MainTitle } from "~/components/atoms";
 import { lounge1 } from "~/public/images";
 
 const Recruit: React.FC = () => {
@@ -16,6 +17,8 @@ const Recruit: React.FC = () => {
           <MainTitle text="Recruit" />
         </Box>
       </BackgroundImage>
+
+      <Tabs />
     </MainLayout>
   );
 };
