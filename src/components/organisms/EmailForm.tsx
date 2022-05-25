@@ -20,8 +20,7 @@ export const EmailForm: React.FC = () => {
   const { handleSubmit, reset } = methods;
 
   const onSubmit: SubmitHandler<EmailFormTypes> = async (input) => {
-    console.log("input value", input);
-    // sendEmail(input);
+    sendEmail(input);
     reset();
   };
 
