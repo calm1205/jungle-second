@@ -24,6 +24,12 @@ export { StyledTextArea } from './Input/StyledTextArea';
 export { Button } from './Button/Button';
 export { CloseButton } from './Button/CloseButton';
 
+/**
+ * Icon
+ */
+export { Twitter } from './Icon/Twitter';
+export { Instagram } from './Icon/Instagram';
+
 export { Tab } from './Tab';
 export { Id } from './Id';
 export { Box } from './Box';
