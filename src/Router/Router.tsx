@@ -6,7 +6,7 @@ export const Router: React.FC = () => {
   const Recruit = lazy(() => import('~/components/pages/Recruit'));
 
   const suspensise = useCallback(
-    (Component: React.LazyExoticComponent<React.FC<{}>>) => (
+    (Component: React.LazyExoticComponent<React.FC>) => (
       <Suspense fallback={<>...</>}>
         <Component />
       </Suspense>
@@ -18,7 +18,9 @@ export const Router: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={suspensise(Top)} />
-        <Route path="recruit" element={suspensise(Recruit)} />
+        <Route path="recruit">
+          <Route path=":recruitId" element={suspensise(Recruit)} />
+        </Route>
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>

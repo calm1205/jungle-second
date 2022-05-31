@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { theme } from '~/theme';
 import { lounge1 } from '~/public/images';
 import { BackgroundImage, Box, MainTitle } from '~/components/atoms';
 import { Tabs } from '~/components/molecules';
 import { Cast, Employee, Staff } from '~/components/organisms';
 import { MainLayout } from '~/components/templates';
+import { useParams } from 'react-router-dom';
+
+const TAB_KEYS = ['cast', 'employee', 'staff'] as const;
+type TabKeys = typeof TAB_KEYS[number];
+type TabContents = { [key in TabKeys]: ReactNode };
+
+const tabContents: TabContents = {
+  cast: <Cast />,
+  employee: <Employee />,
+  staff: <Staff />,
+};
 
 const Recruit: React.FC = () => {
-  const tabContents = [
-    { name: 'Cast', content: <Cast /> },
-    { name: 'Employee', content: <Employee /> },
-    { name: 'Staff', content: <Staff /> },
-  ];
+  const { recruitId } = useParams();
+  const recruitIdFromUrl = (recruitId || 'cast') as TabKeys;
 
   return (
     <MainLayout>
@@ -27,7 +35,8 @@ const Recruit: React.FC = () => {
       </BackgroundImage>
 
       <Box marginTop={theme.space.l}>
-        <Tabs tabContents={tabContents} initialActiveIndex={0} />
+        <Tabs tabs={['cast', 'employee', 'staff']} />
+        {tabContents[recruitIdFromUrl]}
       </Box>
     </MainLayout>
   );
