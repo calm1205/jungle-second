@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { theme } from "~/theme";
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from '~/theme';
 
 type CloseButton = {
   onClick: () => void;
@@ -19,7 +19,7 @@ const CloseButtonStyle = styled.span`
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;

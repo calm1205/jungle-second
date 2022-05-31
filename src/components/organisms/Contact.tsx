@@ -1,7 +1,7 @@
-import React from "react";
-import { theme } from "~/theme";
-import { Box, Id, Title } from "~/components/atoms";
-import { EmailForm } from "./EmailForm";
+import React from 'react';
+import { theme } from '~/theme';
+import { Box, Id, Title } from '~/components/atoms';
+import { EmailForm } from './EmailForm';
 
 export const Contact: React.FC = () => {
   return (

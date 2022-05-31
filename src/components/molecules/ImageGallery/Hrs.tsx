@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { theme } from "~/theme";
-import { Box } from "~/components/atoms";
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from '~/theme';
+import { Box } from '~/components/atoms';
 
 type Props = {
   /** hrの数 */

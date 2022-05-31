@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Box, SubTitle, CloseButton } from "~/components/atoms";
+import React from 'react';
+import styled from 'styled-components';
+import { Box, SubTitle, CloseButton } from '~/components/atoms';
 
 type SideMenuType = {
   isDisplay: boolean;
@@ -52,8 +52,8 @@ export const SideMenu: React.FC<SideMenuType> = ({
   );
 };
 
-const FixWrapper = styled.div<Pick<SideMenuType, "isDisplay">>`
-  display: ${(props) => (props.isDisplay ? "block" : "none")};
+const FixWrapper = styled.div<Pick<SideMenuType, 'isDisplay'>>`
+  display: ${(props) => (props.isDisplay ? 'block' : 'none')};
 
   position: fixed;
   top: 0;

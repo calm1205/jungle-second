@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Box } from "../atoms";
+import React from 'react';
+import styled from 'styled-components';
+import { Box } from '../atoms';
 
 export type FeeLiType = {
   name: string;

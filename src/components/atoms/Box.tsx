@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react";
-import styled, { css } from "styled-components";
-import * as CSS from "csstype";
+import React, { ReactNode } from 'react';
+import styled, { css } from 'styled-components';
+import * as CSS from 'csstype';
 
 type BoxType = {
   children?: ReactNode;
@@ -11,23 +11,23 @@ type BoxType = {
   onClick?: () => void;
 } & Pick<
   CSS.Properties,
-  | "width"
-  | "height"
-  | "margin"
-  | "marginTop"
-  | "marginLeft"
-  | "marginRight"
-  | "marginBottom"
-  | "padding"
-  | "paddingTop"
-  | "paddingLeft"
-  | "paddingRight"
-  | "paddingBottom"
-  | "display"
-  | "justifyContent"
-  | "flexDirection"
-  | "alignItems"
-  | "textAlign"
+  | 'width'
+  | 'height'
+  | 'margin'
+  | 'marginTop'
+  | 'marginLeft'
+  | 'marginRight'
+  | 'marginBottom'
+  | 'padding'
+  | 'paddingTop'
+  | 'paddingLeft'
+  | 'paddingRight'
+  | 'paddingBottom'
+  | 'display'
+  | 'justifyContent'
+  | 'flexDirection'
+  | 'alignItems'
+  | 'textAlign'
 >;
 
 /**
@@ -38,10 +38,10 @@ export const Box: React.FC<BoxType> = (props) => {
   return <Div {...styles}>{children}</Div>;
 };
 
-const Div = styled.div<Omit<BoxType, "children">>`
+const Div = styled.div<Omit<BoxType, 'children'>>`
   ${(styles) => css`
     width: ${styles.width};
-    height: ${styles.height ?? "100%"};
+    height: ${styles.height ?? '100%'};
 
     margin: ${styles.margin};
     margin-top: ${styles.marginTop};

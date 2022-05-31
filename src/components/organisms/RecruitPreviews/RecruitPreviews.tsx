@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Box, Button, Id, Title } from "~/components/atoms";
-import { theme } from "~/theme";
-import { RecruitPreview } from "./RecruitPreview";
-import { recruit1, recruit2, recruit3 } from "~/public/images";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Box, Button, Id, Title } from '~/components/atoms';
+import { theme } from '~/theme';
+import { RecruitPreview } from './RecruitPreview';
+import { recruit1, recruit2, recruit3 } from '~/public/images';
 
 export const RecruitPreviews: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ export const RecruitPreviews: React.FC = () => {
       </Box>
 
       <Box paddingX={theme.space.m}>
-        <Link to={"/recruit"}>
+        <Link to={'/recruit'}>
           <Button>view more</Button>
         </Link>
       </Box>

@@ -1,6 +1,6 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { theme } from "~/theme";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { theme } from '~/theme';
 
 type FootnoteType = {
   text: string;
@@ -18,7 +18,7 @@ export const Footnote: React.FC<FootnoteType> = ({
   return <P marginTop={marginTop}>{text}</P>;
 };
 
-const P = styled.p<Pick<FootnoteType, "marginTop">>`
+const P = styled.p<Pick<FootnoteType, 'marginTop'>>`
   ${({ theme, marginTop }) => css`
     font-size: 1.3rem;
     color: ${theme.font.color.default};

@@ -1,9 +1,9 @@
-import React from "react";
-import { theme } from "~/theme";
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
-import { Box, Button } from "~/components/atoms";
-import { RInput, RTextArea } from "~/components/react-hook-forms";
-import { sendEmail } from "~/hooks";
+import React from 'react';
+import { theme } from '~/theme';
+import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
+import { Box, Button } from '~/components/atoms';
+import { RInput, RTextArea } from '~/components/react-hook-forms';
+import { sendEmail } from '~/hooks';
 
 type EmailFormTypes = {
   name: string;
@@ -13,9 +13,9 @@ type EmailFormTypes = {
 
 export const EmailForm: React.FC = () => {
   const methods = useForm<EmailFormTypes>({
-    mode: "onBlur",
-    reValidateMode: "onChange",
-    defaultValues: { name: "", email: "", content: "" },
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
+    defaultValues: { name: '', email: '', content: '' },
   });
   const { handleSubmit, reset } = methods;
 

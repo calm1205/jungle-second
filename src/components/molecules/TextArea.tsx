@@ -1,11 +1,11 @@
-import React from "react";
-import { theme } from "~/theme";
+import React from 'react';
+import { theme } from '~/theme';
 import {
   Box,
   FormErrorMessage,
   Label,
   StyledTextArea,
-} from "~/components/atoms";
+} from '~/components/atoms';
 
 export type TextAreaType = {
   name: string;
@@ -37,7 +37,7 @@ export const TextArea: React.FC<TextAreaType> = ({
           onBlur={onBlur}
         />
         <Box marginTop={theme.space.xs}>
-          <FormErrorMessage children={error} />
+          <FormErrorMessage>{error}</FormErrorMessage>
         </Box>
       </Label>
     </>
