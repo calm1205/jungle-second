@@ -14,24 +14,24 @@ export const RecruitPreviews: React.FC = () => {
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="Cast" text="キャスト" image={recruit1} />
+        <Link to="/recruit/cast">
+          <RecruitPreview title="Cast" text="キャスト" image={recruit1} />
+        </Link>
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview title="Employee" text="正社員" image={recruit3} />
+        <Link to="/recruit/employee">
+          <RecruitPreview title="Employee" text="正社員" image={recruit3} />
+        </Link>
       </Box>
 
       <Box padding={theme.space.m}>
-        <RecruitPreview
-          title="Staff"
-          text="ホールスタッフ（アルバイト）"
-          image={recruit2}
-        />
-      </Box>
-
-      <Box paddingX={theme.space.m}>
-        <Link to={'/recruit'}>
-          <Button>view more</Button>
+        <Link to="/recruit/staff">
+          <RecruitPreview
+            title="Staff"
+            text="ホールスタッフ（アルバイト）"
+            image={recruit2}
+          />
         </Link>
       </Box>
 
