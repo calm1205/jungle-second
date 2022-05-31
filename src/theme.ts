@@ -31,6 +31,7 @@ export const theme = {
   color: {
     main: "#DEB887",
     disabled: "gray",
+    inActive: "#DDDDDD",
   },
 
   /**

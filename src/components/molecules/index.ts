@@ -17,6 +17,8 @@ export { FeeLiType } from "./FeeLi";
 export { FeeUl } from "./FeeUl";
 export { FeeSection } from "./FeeSection";
 
-export { ImageGallery } from "./ImageGallery";
+export { ImageGallery } from "./ImageGallery/ImageGallery";
 export { MenuButton } from "./MenuButton";
 export { SideMenu } from "./SideMenu";
+
+export { Hrs } from "./ImageGallery/Hrs";
