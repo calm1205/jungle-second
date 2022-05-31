@@ -9,19 +9,19 @@ export const theme = {
    */
   font: {
     family: {
-      default: "serif",
-      secondary: "sans-serif",
-      crusive: "Tangerine",
+      default: 'serif',
+      secondary: 'sans-serif',
+      crusive: 'Tangerine',
     },
     color: {
-      default: "#313131",
-      secondary: "#eeeeee",
-      error: "#FF3333",
+      default: '#313131',
+      secondary: '#eeeeee',
+      error: '#FF3333',
     },
     letterSpacing: {
-      mainTitle: "8px",
-      title: "4px",
-      paragraph: "2px",
+      mainTitle: '8px',
+      title: '4px',
+      paragraph: '2px',
     },
   },
 
@@ -29,15 +29,16 @@ export const theme = {
    * カラーリング
    */
   color: {
-    main: "#DEB887",
-    disabled: "gray",
+    main: '#DEB887',
+    disabled: 'gray',
+    inActive: '#DDDDDD',
   },
 
   /**
    * 区切り線
    */
   hr: {
-    color: "#404040",
+    color: '#404040',
   },
 
   /**
@@ -45,9 +46,9 @@ export const theme = {
    */
   background: {
     color: {
-      main: "#f3eee7",
-      mainRGB: "243,238,231",
-      secondary: "white",
+      main: '#f3eee7',
+      mainRGB: '243,238,231',
+      secondary: 'white',
     },
   },
 
@@ -57,7 +58,7 @@ export const theme = {
   input: {
     border: {
       color: {
-        default: "#dad9d6",
+        default: '#dad9d6',
       },
     },
   },

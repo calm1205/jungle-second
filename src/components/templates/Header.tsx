@@ -1,8 +1,8 @@
-import React, { useCallback, useState } from "react";
-import styled from "styled-components";
-import { Box } from "~/components/atoms";
-import { MenuButton, SideMenu } from "~/components/molecules";
-import { theme } from "~/theme";
+import React, { useCallback, useState } from 'react';
+import styled from 'styled-components';
+import { Box } from '~/components/atoms';
+import { MenuButton, SideMenu } from '~/components/molecules';
+import { theme } from '~/theme';
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);

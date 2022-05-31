@@ -1,36 +1,30 @@
-import React, { ReactNode } from "react";
-import { Box, Tab } from "~/components/atoms";
-import { useTabs } from "./useTabs";
-import { Edge } from "./Edge";
+import React from 'react';
+import { Box, Tab } from '~/components/atoms';
+import { Edge } from './Edge';
+import { useNavigate, useParams } from 'react-router-dom';
 
-type Tab = {
-  name: string;
-  content: ReactNode;
-};
 type Props = {
-  tabContents: Tab[];
-  initialActiveIndex: number;
+  tabs: string[];
 };
 
-export const Tabs: React.FC<Props> = ({ tabContents, initialActiveIndex }) => {
-  const tabLength = tabContents.length;
-  const [tabs, tabIndex] = useTabs(tabLength, initialActiveIndex);
+export const Tabs: React.FC<Props> = ({ tabs }) => {
+  const { recruitId } = useParams();
+  const navigate = useNavigate();
 
   return (
-    <>
-      <Box display="flex">
-        <Edge />
-        {tabs.map((t, i) => (
+    <Box display="flex">
+      <Edge />
+      {tabs.map((key) => {
+        return (
           <Tab
-            key={`tab_${i}`}
-            text={tabContents[i].name}
-            isActive={t.isActive}
-            onClick={t.onClick}
+            key={key}
+            text={key}
+            isActive={key === recruitId}
+            onClick={() => navigate(`/recruit/${key}`)}
           />
-        ))}
-        <Edge />
-      </Box>
-      {tabContents[tabIndex].content}
-    </>
+        );
+      })}
+      <Edge />
+    </Box>
   );
 };

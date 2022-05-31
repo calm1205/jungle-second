@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react';
+import styled, { css } from 'styled-components';
 
 type SubTitleType = {
   text: string;
@@ -9,7 +9,7 @@ type SubTitleType = {
  * カテゴリの中でのタイトル
  */
 export const SubTitle: React.FC<SubTitleType> = ({ text }) => {
-  return <H3 children={text} />;
+  return <H3>{text}</H3>;
 };
 
 const H3 = styled.h3`

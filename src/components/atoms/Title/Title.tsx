@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react';
+import styled, { css } from 'styled-components';
 
 type TitleType = {
   text: string;
@@ -9,7 +9,7 @@ type TitleType = {
  * カテゴリ毎のタイトル
  */
 export const Title: React.FC<TitleType> = ({ text }) => {
-  return <H2 children={text} />;
+  return <H2>{text}</H2>;
 };
 
 const H2 = styled.h2`

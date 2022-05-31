@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Box, SubTitle } from "~/components/atoms";
-import { FeeLiType, FeeUl } from "~/components/molecules";
+import { Box, SubTitle } from '~/components/atoms';
+import { FeeLiType, FeeUl } from '~/components/molecules';
 
 type FeeSection = {
   title: string;

@@ -1,7 +1,7 @@
-import React from "react";
-import { theme } from "~/theme";
-import { Box, Footnote, Title } from "~/components/atoms";
-import { HeadingParagraph } from "~/components/molecules/HeadingParagraph";
+import React from 'react';
+import { theme } from '~/theme';
+import { Box, Footnote, Title } from '~/components/atoms';
+import { HeadingParagraph } from '~/components/molecules/HeadingParagraph';
 
 type Props = {
   footnote: string;

@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Paragraph, SubTitle } from "~/components/atoms";
+import React from 'react';
+import { Box, Paragraph, SubTitle } from '~/components/atoms';
 
 type FeeType = {
   title: string;
@@ -11,8 +11,8 @@ type FeeType = {
 export const Fee: React.FC<FeeType> = ({
   title,
   fee,
-  time = "",
-  description = "",
+  time = '',
+  description = '',
 }) => {
   const timeDisplay = time && `${time}分`;
 
