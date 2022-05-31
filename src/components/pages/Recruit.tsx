@@ -1,21 +1,21 @@
-import React from "react";
-import { theme } from "~/theme";
-import { lounge1 } from "~/public/images";
-import { BackgroundImage, Box, MainTitle } from "~/components/atoms";
-import { Tabs } from "~/components/molecules";
-import { Cast, Employee, Staff } from "~/components/organisms";
-import { MainLayout } from "~/components/templates";
+import React from 'react';
+import { theme } from '~/theme';
+import { lounge1 } from '~/public/images';
+import { BackgroundImage, Box, MainTitle } from '~/components/atoms';
+import { Tabs } from '~/components/molecules';
+import { Cast, Employee, Staff } from '~/components/organisms';
+import { MainLayout } from '~/components/templates';
 
 const Recruit: React.FC = () => {
   const tabContents = [
-    { name: "Cast", content: <Cast /> },
-    { name: "Employee", content: <Employee /> },
-    { name: "Staff", content: <Staff /> },
+    { name: 'Cast', content: <Cast /> },
+    { name: 'Employee', content: <Employee /> },
+    { name: 'Staff', content: <Staff /> },
   ];
 
   return (
     <MainLayout>
-      <BackgroundImage image={lounge1} size={{ height: "220px" }}>
+      <BackgroundImage image={lounge1} size={{ height: '220px' }}>
         <Box
           display="flex"
           justifyContent="center"

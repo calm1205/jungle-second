@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
-import { Box, Tab } from "~/components/atoms";
-import { useTabs } from "./useTabs";
-import { Edge } from "./Edge";
+import React, { ReactNode } from 'react';
+import { Box, Tab } from '~/components/atoms';
+import { useTabs } from './useTabs';
+import { Edge } from './Edge';
 
 type Tab = {
   name: string;

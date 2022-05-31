@@ -2,7 +2,6 @@ import React from 'react';
 import { theme } from '~/theme';
 import { Box, Id, Instagram, Title, Twitter } from '~/components/atoms';
 import { EmailForm } from './EmailForm';
-import { Link } from 'react-router-dom';
 
 export const Contact: React.FC = () => {
   return (
