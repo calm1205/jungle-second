@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Box, Id, Title } from '~/components/atoms';
 import { theme } from '~/theme';
 import { RecruitPreview } from './RecruitPreview';
-import { recruit1, recruit2, recruit3 } from '~/public/images';
+import { cast, staff, employee } from '~/public/images';
 
 export const RecruitPreviews: React.FC = () => {
   return (
@@ -15,13 +15,13 @@ export const RecruitPreviews: React.FC = () => {
 
       <Box padding={theme.space.m}>
         <Link to="/recruit/cast">
-          <RecruitPreview title="Cast" text="キャスト" image={recruit1} />
+          <RecruitPreview title="Cast" text="キャスト" image={cast} />
         </Link>
       </Box>
 
       <Box padding={theme.space.m}>
         <Link to="/recruit/employee">
-          <RecruitPreview title="Employee" text="正社員" image={recruit3} />
+          <RecruitPreview title="Employee" text="正社員" image={employee} />
         </Link>
       </Box>
 
@@ -30,7 +30,7 @@ export const RecruitPreviews: React.FC = () => {
           <RecruitPreview
             title="Staff"
             text="ホールスタッフ（アルバイト）"
-            image={recruit2}
+            image={staff}
           />
         </Link>
       </Box>
