@@ -30,7 +30,7 @@ const Recruit: React.FC = () => {
           alignItems="center"
           marginTop="70px"
         >
-          <MainTitle text="Recruit" />
+          <MainTitle>Recruit</MainTitle>
         </Box>
       </BackgroundImage>
 

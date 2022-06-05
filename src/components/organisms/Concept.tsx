@@ -2,13 +2,17 @@ import React from 'react';
 import { theme } from '~/theme';
 import { Box, Id, Paragraph, Title } from '~/components/atoms';
 import { ImageGallery } from '~/components/molecules';
+import { Slider } from '../atoms/Slider';
 
 export const Concept: React.FC = () => {
   return (
     <>
       <Id id="home" />
+
       <Box paddingY={theme.space.xl} textAlign="center">
-        <Paragraph text="日本 東京" />
+        <Slider />
+
+        <Paragraph text="日本 東京" marginTop={theme.space.xl} />
 
         <Box marginY={theme.space.m}>
           <Title text="Lounge Jungle" />

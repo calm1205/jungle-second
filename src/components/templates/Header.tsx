@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
 const FixWrapper = styled.div`
   position: fixed;
   top: 0;
-  height: 70px;
+  height: ${theme.space.xl};
   width: 100%;
   background-color: rgba(${theme.background.color.mainRGB}, 0.9);
 
