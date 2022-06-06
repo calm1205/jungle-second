@@ -2,7 +2,7 @@ import React from 'react';
 import { theme } from '~/theme';
 import { Box, Id, Paragraph, Title } from '~/components/atoms';
 import { ImageGallery } from '~/components/molecules';
-import { Slider } from '../atoms/Slider';
+import { Slider } from './Slider/Slider';
 
 export const Concept: React.FC = () => {
   return (
