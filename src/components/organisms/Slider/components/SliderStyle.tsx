@@ -24,7 +24,7 @@ export const SliderStyle = styled.li<SliderStyleType>`
     transform: scale(1.3);
   }
   &.initial {
-    animation: fadeIn 7.5s;
+    animation: fadeIn 8.5s;
   }
   @keyframes fadeIn {
     0% {
