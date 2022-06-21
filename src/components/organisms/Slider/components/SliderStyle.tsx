@@ -23,4 +23,20 @@ export const SliderStyle = styled.li<SliderStyleType>`
   &.zoom {
     transform: scale(1.3);
   }
+  &.initial {
+    animation: fadeIn 7.5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
 `;

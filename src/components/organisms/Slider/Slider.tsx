@@ -9,8 +9,10 @@ const IMAGES = [slider1, slider2, slider3, slider4] as const;
 export const Slider: React.FC = () => {
   const [showIndex, setShow] = useState(1);
   const [zoomIndex, setZoom] = useState(0);
+  const [initial, setInitial] = useState(true);
 
   const _callback = useCallback(() => {
+    setInitial(false);
     setShow((old) => {
       if (old < IMAGES.length - 1) return old + 1;
       return 0;
@@ -22,7 +24,6 @@ export const Slider: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    _callback();
     const inter = setInterval(_callback, 6000);
     return () => clearInterval(inter);
   }, []);
@@ -32,7 +33,7 @@ export const Slider: React.FC = () => {
       key={index}
       image={image}
       className={`
-       ${index === showIndex ? 'show zoom' : ''}
+       ${index === showIndex && !initial ? 'show zoom' : ''}
        ${index === zoomIndex ? 'zoom' : ''}
       `}
     />
@@ -45,6 +46,7 @@ export const Slider: React.FC = () => {
         <SubTitle>{'気品と優美さを組み込んだ\n洗礼された空間'}</SubTitle>
       </TitleBox>
       {sliders}
+      <SliderStyle key="initial" image={slider2} className={'initial'} />
     </SliderWrapper>
   );
 };
