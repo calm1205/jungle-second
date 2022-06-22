@@ -2,6 +2,7 @@ import React from 'react';
 import { theme } from '~/theme';
 import { Box, Id, Instagram, Title, Twitter } from '~/components/atoms';
 import { EmailForm } from './EmailForm';
+import { BaseRadio } from '../molecules/Radio/BaseRadio';
 
 export const Contact: React.FC = () => {
   return (
@@ -10,6 +11,11 @@ export const Contact: React.FC = () => {
       <Box padding={`${theme.space.xl} 0`}>
         <Box textAlign="center">
           <Title text="Contact" />
+        </Box>
+
+        <Box display="flex" justifyContent="center">
+          <BaseRadio name="sample" checked={false} />
+          {/* <BaseRadio /> */}
         </Box>
 
         <EmailForm />

@@ -6,6 +6,9 @@ type Label = {
   children: ReactNode;
 };
 
+/**
+ * フォームのラベル
+ */
 export const Label: React.FC<Label> = ({ text, children }) => {
   return (
     <StyledLabel>
