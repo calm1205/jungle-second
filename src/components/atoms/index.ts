@@ -23,6 +23,7 @@ export { StyledTextArea } from './Input/StyledTextArea';
  */
 export { RadioLabel } from './Radio/RadioLabel';
 export { HiddenRadio } from './Radio/HiddenRadio';
+export { BaseRadioType } from './Radio/HiddenRadio';
 export { StyledActiveRadio } from './Radio/StyledActiveRadio';
 export { StyledInActiveRadio } from './Radio/StyledInActiveRadio';
 

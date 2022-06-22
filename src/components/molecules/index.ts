@@ -5,6 +5,8 @@ export { Input } from './Input';
 export { InputType } from './Input';
 export { TextArea } from './TextArea';
 export { TextAreaType } from './TextArea';
+export { Radio } from './Radio/Radio';
+export { RadioType } from './Radio/Radio';
 
 export { HeadingParagraph } from './HeadingParagraph';
 export { Tabs } from './Tabs/Tabs';

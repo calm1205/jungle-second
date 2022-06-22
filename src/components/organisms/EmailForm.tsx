@@ -30,6 +30,15 @@ export const EmailForm: React.FC = () => {
         <Box padding={theme.space.m}>
           <RInput name="name" label="氏名" placeholder="山田太郎" />
 
+          {/* <Box display="flex" justifyContent="center">
+            <RRadio
+              name="sample"
+              checked={false}
+              label="sample"
+              value="value"
+            />
+          </Box> */}
+
           <Box marginTop={theme.space.m}>
             <RInput
               name="email"
