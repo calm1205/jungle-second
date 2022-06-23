@@ -1,11 +1,17 @@
 import React, { ReactNode } from 'react';
 import { theme } from '~/theme';
 import { lounge1 } from '~/public/images';
-import { BackgroundImage, Box, MainTitle } from '~/components/atoms';
+import {
+  BackgroundImage,
+  Box,
+  MainTitle,
+  RoundButton,
+} from '~/components/atoms';
 import { Tabs } from '~/components/molecules';
 import { Cast, Employee, Staff } from '~/components/organisms';
 import { MainLayout } from '~/components/templates';
 import { useParams } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const TAB_KEYS = ['cast', 'employee', 'staff'] as const;
 type TabKeys = typeof TAB_KEYS[number];
@@ -37,6 +43,14 @@ const Recruit: React.FC = () => {
       <Box marginTop={theme.space.l}>
         <Tabs tabs={['cast', 'employee', 'staff']} />
         {tabContents[recruitIdFromUrl]}
+      </Box>
+
+      <Box marginTop={theme.space.s} display="flex" justifyContent="center">
+        <Box width="50%">
+          <HashLink to="/#contact">
+            <RoundButton>Contact</RoundButton>
+          </HashLink>
+        </Box>
       </Box>
     </MainLayout>
   );

@@ -32,6 +32,7 @@ export { StyledInActiveRadio } from './Radio/StyledInActiveRadio';
  */
 export { Button } from './Button/Button';
 export { CloseButton } from './Button/CloseButton';
+export { RoundButton } from './Button/RoundButton';
 
 /**
  * Icon
