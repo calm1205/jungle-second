@@ -9,13 +9,12 @@ export const RRadio: React.FC<RadioType> = ({
   name,
   checked,
   label,
-  value,
   onChange,
 }) => {
   return (
     <Controller
       name={name}
-      render={({ field: { name } }) => (
+      render={({ field: { name, value } }) => (
         <Radio
           name={name}
           checked={checked}

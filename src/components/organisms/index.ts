@@ -4,7 +4,7 @@ export { Access } from './Access';
 export { Contact } from './Contact';
 
 export { Fee } from './Fee';
-export { EmailForm } from './EmailForm';
+export { EmailForm } from './EmailForm/EmailForm';
 
 /**
  * Input

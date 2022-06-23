@@ -1,4 +1,4 @@
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 type TemplatePrams = Record<string, unknown> | undefined;
 
