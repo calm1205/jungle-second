@@ -2,6 +2,7 @@ import React from 'react';
 import { theme } from '~/theme';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { Box, Button } from '~/components/atoms';
+import { Radios } from '~/components/organisms';
 import { RInput, RTextArea } from '~/components/react-hook-forms';
 import { sendEmail } from '~/hooks';
 
@@ -30,14 +31,14 @@ export const EmailForm: React.FC = () => {
         <Box padding={theme.space.m}>
           <RInput name="name" label="氏名" placeholder="山田太郎" />
 
-          {/* <Box display="flex" justifyContent="center">
-            <RRadio
-              name="sample"
-              checked={false}
-              label="sample"
-              value="value"
-            />
-          </Box> */}
+          <Radios
+            name="sex"
+            items={[
+              { label: '男性', value: 'male' },
+              { label: '女性', value: 'female' },
+              { label: 'その他', value: 'other' },
+            ]}
+          />
 
           <Box marginTop={theme.space.m}>
             <RInput

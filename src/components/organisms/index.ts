@@ -7,6 +7,11 @@ export { Fee } from './Fee';
 export { EmailForm } from './EmailForm';
 
 /**
+ * Input
+ */
+export { Radios } from './Radio/Radios';
+
+/**
  * Recruit
  */
 export { RecruitPreviews } from './RecruitPreviews/RecruitPreviews';

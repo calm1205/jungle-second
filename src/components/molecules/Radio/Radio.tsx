@@ -14,11 +14,21 @@ export type RadioType = BaseRadioType & {
 /**
  * 単体のラジオボタン
  */
-export const Radio: React.FC<RadioType> = ({ name, checked, label, value }) => {
+export const Radio: React.FC<RadioType> = ({
+  name,
+  checked,
+  label,
+  value,
+  onChange,
+}) => {
   return (
     <RadioLabel text={label}>
-      <HiddenRadio name={name} checked={checked} value={value} />
-
+      <HiddenRadio
+        name={name}
+        checked={checked}
+        value={value}
+        onChange={onChange}
+      />
       <StyledInActiveRadio>
         {checked && <StyledActiveRadio />}
       </StyledInActiveRadio>
