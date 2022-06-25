@@ -51,7 +51,7 @@ export const System: React.FC = () => {
             fees={[
               { name: '1set', value: '¥12000' },
               { name: 'charge', value: '¥50000' },
-              { name: 'additional', value: '¥9000' },
+              { name: 'additional', value: '¥6000' },
             ]}
           />
         </Box>
