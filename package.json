@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "deploy": "webpack && gh-pages -d dist"
+    "deploy": "webpack && gh-pages -d dist",
+    "barrel": "barrelsby --config ./barrelsby.json"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "barrelsby": "^2.3.4",
     "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.30.0",
     "gh-pages": "^4.0.0",

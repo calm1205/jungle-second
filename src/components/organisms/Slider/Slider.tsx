@@ -2,7 +2,12 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { MainTitle } from '~/components/atoms';
 import { slider1, slider2, slider3, slider4 } from '~/public/images';
 import { theme } from '~/theme';
-import { SliderStyle, SliderWrapper, TitleBox, SubTitle } from './components';
+import {
+  SliderStyle,
+  SliderWrapper,
+  TitleBox,
+  SubTitle,
+} from '~/components/organisms';
 
 const IMAGES = [slider1, slider2, slider3, slider4] as const;
 

@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   Concept,
   System,
   RecruitPreviews,
   Access,
   Contact,
-} from "~/components/organisms";
-import { MainLayout } from "~/components/templates";
+} from '~/components/organisms';
+import { MainLayout } from '~/components/templates';
 
 const Top: React.FC = () => {
   return (

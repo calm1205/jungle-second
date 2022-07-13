@@ -1,0 +1,13 @@
+{
+  "directory": [
+    "./src/components/atoms",
+    "./src/components/atoms/Icon",
+    "./src/components/molecules",
+    "./src/components/organisms",
+    "./src/components/pages",
+    "./src/hooks"
+  ],
+  "delete": true,
+  "singleQuotes": true,
+  "include": [".ts$", ".tsx$"]
+}
