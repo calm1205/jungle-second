@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import { Box } from '~/components/atoms';
 import { MenuButton, SideMenu } from '~/components/molecules';

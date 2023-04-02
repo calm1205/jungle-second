@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { lounge1, lounge2, lounge3, lounge4 } from '~/public/images';
 import { BackgroundImage, Box } from '~/components/atoms';
 import SwipeableViews from 'react-swipeable-views';

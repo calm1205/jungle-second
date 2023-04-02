@@ -1,5 +1,3 @@
-import React from 'react';
-
 type Id = {
   id: string;
 };

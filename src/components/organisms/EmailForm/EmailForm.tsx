@@ -1,4 +1,3 @@
-import React from 'react';
 import { theme } from '~/theme';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { Box, Button } from '~/components/atoms';

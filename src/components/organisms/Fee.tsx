@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Paragraph, SubTitle } from '~/components/atoms';
 
 type FeeType = {

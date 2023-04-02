@@ -1,4 +1,3 @@
-import React from 'react';
 import { RecruitDetail } from './RecruitDetail';
 
 export const Staff: React.FC = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Tab } from '~/components/atoms';
 import { Edge } from './Edge';
 import { useNavigate, useParams } from 'react-router-dom';

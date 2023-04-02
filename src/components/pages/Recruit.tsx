@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { theme } from '~/theme';
 import { lounge1 } from '~/public/images';
 import {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { theme } from '~/theme';
 import { BackgroundImage, Box, Footnote, SubTitle } from '~/components/atoms';
 

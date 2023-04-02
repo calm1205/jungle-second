@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Line } from '~/components/atoms';
 
 type MenuButton = {

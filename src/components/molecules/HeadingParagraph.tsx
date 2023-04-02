@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Heading, Paragraph } from '~/components/atoms';
 import { theme } from '~/theme';
 

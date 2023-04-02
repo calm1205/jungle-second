@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Box, SubTitle } from '~/components/atoms';
 import { FeeLi, FeeUl } from '~/components/molecules';
 

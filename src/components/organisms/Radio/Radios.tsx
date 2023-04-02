@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Label } from '~/components/atoms';
 import { RRadio } from '~/components/react-hook-forms';
 import { theme } from '~/theme';

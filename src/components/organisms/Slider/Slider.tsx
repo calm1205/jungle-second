@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { MainTitle } from '~/components/atoms';
 import { slider1, slider2, slider3, slider4 } from '~/public/images';
 import { theme } from '~/theme';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Controller } from 'react-hook-form';
 import { Radio } from '~/components/molecules';
 import { Box, Label } from '~/components/atoms';

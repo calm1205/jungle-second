@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Id, Title } from '~/components/atoms';
 import { theme } from '~/theme';

@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import { ChangeEvent } from 'react';
 import styled from 'styled-components';
 
 export type BaseRadio = Pick<HTMLInputElement, 'name' | 'checked' | 'value'> & {

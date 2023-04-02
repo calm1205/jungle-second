@@ -1,4 +1,3 @@
-import React from 'react';
 import { theme } from '~/theme';
 import { Box, Id, Paragraph } from '~/components/atoms';
 import { ImageGallery } from '~/components/molecules';
