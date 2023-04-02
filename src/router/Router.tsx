@@ -1,12 +1,12 @@
-import React, { lazy, Suspense, useCallback } from 'react';
+import { FC, lazy, Suspense, useCallback } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-export const Router: React.FC = () => {
+export const Router: FC = () => {
   const Top = lazy(() => import('~/components/pages/Top'));
   const Recruit = lazy(() => import('~/components/pages/Recruit'));
 
   const suspensise = useCallback(
-    (Component: React.LazyExoticComponent<React.FC>) => (
+    (Component: React.LazyExoticComponent<FC>) => (
       <Suspense fallback={<>...</>}>
         <Component />
       </Suspense>
