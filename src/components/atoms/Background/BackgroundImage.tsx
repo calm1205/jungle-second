@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
-type BackgroundImageType = {
+type BackgroundImage = {
   image: string;
   size?: {
     width?: string;
@@ -13,7 +13,7 @@ type BackgroundImageType = {
 /**
  * ラップした要素の背景画像
  */
-export const BackgroundImage: React.FC<BackgroundImageType> = ({
+export const BackgroundImage: React.FC<BackgroundImage> = ({
   image,
   size,
   children,
@@ -25,7 +25,7 @@ export const BackgroundImage: React.FC<BackgroundImageType> = ({
   );
 };
 
-const Wrapper = styled.div<BackgroundImageType>`
+const Wrapper = styled.div<BackgroundImage>`
   background-size: cover;
   background-image: url(${({ image }) => image});
   background-repeat: no-repeat;

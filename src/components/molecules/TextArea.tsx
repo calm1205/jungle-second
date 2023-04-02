@@ -7,7 +7,7 @@ import {
   StyledTextArea,
 } from '~/components/atoms';
 
-export type TextAreaType = {
+export type TextArea = {
   name: string;
   label: string;
   placeholder?: string;
@@ -17,7 +17,7 @@ export type TextAreaType = {
   onBlur?: () => void;
 };
 
-export const TextArea: React.FC<TextAreaType> = ({
+export const TextArea: React.FC<TextArea> = ({
   name,
   label,
   placeholder,

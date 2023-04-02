@@ -1,14 +1,14 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-type SubTitleType = {
+type SubTitle = {
   text: string;
 };
 
 /**
  * カテゴリの中でのタイトル
  */
-export const SubTitle: React.FC<SubTitleType> = ({ text }) => {
+export const SubTitle: React.FC<SubTitle> = ({ text }) => {
   return <H3>{text}</H3>;
 };
 

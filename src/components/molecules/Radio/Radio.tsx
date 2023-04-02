@@ -1,37 +1,35 @@
 import React from 'react';
 import {
-  BaseRadioType,
+  BaseRadio,
   HiddenRadio,
   RadioLabel,
   StyledActiveRadio,
   StyledInActiveRadio,
 } from '~/components/atoms';
 
-export type RadioType = BaseRadioType & {
+export type Radio = BaseRadio & {
   label: string;
 };
 
 /**
  * 単体のラジオボタン
  */
-export const Radio: React.FC<RadioType> = ({
+export const Radio: React.FC<Radio> = ({
   name,
   checked,
   label,
   value,
   onChange,
-}) => {
-  return (
-    <RadioLabel text={label}>
-      <HiddenRadio
-        name={name}
-        checked={checked}
-        value={value}
-        onChange={onChange}
-      />
-      <StyledInActiveRadio>
-        {checked && <StyledActiveRadio />}
-      </StyledInActiveRadio>
-    </RadioLabel>
-  );
-};
+}) => (
+  <RadioLabel text={label}>
+    <HiddenRadio
+      name={name}
+      checked={checked}
+      value={value}
+      onChange={onChange}
+    />
+    <StyledInActiveRadio>
+      {checked && <StyledActiveRadio />}
+    </StyledInActiveRadio>
+  </RadioLabel>
+);

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled, { css } from 'styled-components';
 import * as CSS from 'csstype';
 
-type BoxType = {
+type Box = {
   children?: ReactNode;
   marginX?: string;
   marginY?: string;
@@ -33,12 +33,12 @@ type BoxType = {
 /**
  * コンポーネント同士の空間制御
  */
-export const Box: React.FC<BoxType> = (props) => {
+export const Box: React.FC<Box> = (props) => {
   const { children, ...styles } = props;
   return <Div {...styles}>{children}</Div>;
 };
 
-const Div = styled.div<Omit<BoxType, 'children'>>`
+const Div = styled.div<Omit<Box, 'children'>>`
   ${(styles) => css`
     width: ${styles.width};
     height: ${styles.height ?? '100%'};

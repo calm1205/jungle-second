@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { theme } from '~/theme';
 
-type RadioLabelType = {
+type RadioLabel = {
   text: string;
   children: ReactNode;
 };
@@ -10,7 +10,7 @@ type RadioLabelType = {
 /**
  * ラジオボタンのラベル
  */
-export const RadioLabel: React.FC<RadioLabelType> = ({ text, children }) => {
+export const RadioLabel: React.FC<RadioLabel> = ({ text, children }) => {
   return (
     <StyledRadioLabel>
       {children} <TextStyle>{text}</TextStyle>

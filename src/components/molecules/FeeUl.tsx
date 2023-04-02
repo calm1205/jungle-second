@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { FeeLi, FeeLiType } from '~/components/molecules';
+import { FeeLi } from '~/components/molecules';
 
 type FeeUlType = {
-  lists: FeeLiType[];
+  lists: FeeLi[];
 };
 
 /**

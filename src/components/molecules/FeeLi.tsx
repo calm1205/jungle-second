@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box } from '../atoms';
 
-export type FeeLiType = {
+export type FeeLi = {
   name: string;
   value: string;
 };
@@ -10,7 +10,7 @@ export type FeeLiType = {
 /**
  * 料金のリストの1パーツ
  */
-export const FeeLi: React.FC<FeeLiType> = ({ name, value }) => {
+export const FeeLi: React.FC<FeeLi> = ({ name, value }) => {
   return (
     <FeeLiStyle>
       <Box display="flex" justifyContent="space-between">

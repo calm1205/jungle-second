@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box, SubTitle, CloseButton } from '~/components/atoms';
 
-type SideMenuType = {
+type SideMenu = {
   isDisplay: boolean;
   onClose: () => void;
 };
 
-export const SideMenu: React.FC<SideMenuType> = ({
+export const SideMenu: React.FC<SideMenu> = ({
   isDisplay = false,
   onClose,
 }) => {
@@ -52,7 +52,7 @@ export const SideMenu: React.FC<SideMenuType> = ({
   );
 };
 
-const FixWrapper = styled.div<Pick<SideMenuType, 'isDisplay'>>`
+const FixWrapper = styled.div<Pick<SideMenu, 'isDisplay'>>`
   display: ${(props) => (props.isDisplay ? 'block' : 'none')};
 
   position: fixed;

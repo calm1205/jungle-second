@@ -3,11 +3,11 @@ import { Box, Tab } from '~/components/atoms';
 import { Edge } from './Edge';
 import { useNavigate, useParams } from 'react-router-dom';
 
-type Props = {
+type Tabs = {
   tabs: string[];
 };
 
-export const Tabs: React.FC<Props> = ({ tabs }) => {
+export const Tabs: React.FC<Tabs> = ({ tabs }) => {
   const { recruitId } = useParams();
   const navigate = useNavigate();
 

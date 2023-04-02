@@ -2,7 +2,7 @@ import React from 'react';
 import { theme } from '~/theme';
 import { Box, FormErrorMessage, Label, StyledInput } from '~/components/atoms';
 
-export type InputType = {
+export type Input = {
   name: string;
   label: string;
   placeholder?: string;
@@ -12,7 +12,7 @@ export type InputType = {
   onBlur?: () => void;
 };
 
-export const Input: React.FC<InputType> = ({
+export const Input: React.FC<Input> = ({
   name,
   label,
   placeholder,

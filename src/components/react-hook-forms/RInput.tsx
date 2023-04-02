@@ -1,8 +1,8 @@
 import React from 'react';
 import { Controller } from 'react-hook-form';
-import { Input, InputType } from '~/components/molecules';
+import { Input } from '~/components/molecules';
 
-export const RInput: React.FC<InputType> = ({ name, label, placeholder }) => {
+export const RInput: React.FC<Input> = ({ name, label, placeholder }) => {
   return (
     <Controller
       name={name}

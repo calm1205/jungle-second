@@ -1,14 +1,14 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-type TitleType = {
+type Title = {
   text: string;
 };
 
 /**
  * カテゴリ毎のタイトル
  */
-export const Title: React.FC<TitleType> = ({ text }) => {
+export const Title: React.FC<Title> = ({ text }) => {
   return <H2>{text}</H2>;
 };
 
