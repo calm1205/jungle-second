@@ -1,5 +1,5 @@
 import { theme } from '~/theme';
-import { Box, Id, Title } from '~/components/atoms';
+import { Box, Id, Line, Title } from '~/components/atoms';
 import { EmailForm } from './EmailForm/EmailForm';
 import { SnsLinks } from './SnsLinks/SnsLinks';
 
@@ -14,6 +14,7 @@ export const Contact: React.FC = () => (
         <Title text="Contact" />
       </Box>
 
+      <Line />
       <EmailForm />
 
       <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
