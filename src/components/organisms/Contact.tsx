@@ -1,7 +1,7 @@
 import { theme } from '~/theme';
-import { Box, Id, Line, Title } from '~/components/atoms';
-import { EmailForm } from './EmailForm/EmailForm';
-import { SnsLinks } from './SnsLinks/SnsLinks';
+import { Box, Id, Paragraph, Title } from '~/components/atoms';
+import { SnsLinks } from '~/components/organisms';
+import { LineLink } from '~/components/molecules';
 
 /**
  * 連絡手段
@@ -14,8 +14,14 @@ export const Contact: React.FC = () => (
         <Title text="Contact" />
       </Box>
 
-      <Line />
-      <EmailForm />
+      <Box padding={theme.space.m}>
+        <Paragraph text="お問い合わせは以下からお願いします。"></Paragraph>
+        <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
+          <LineLink />
+        </Box>
+      </Box>
+
+      {/* <EmailForm /> */}
 
       <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
         <SnsLinks />

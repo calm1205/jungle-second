@@ -9,5 +9,6 @@
   ],
   "delete": true,
   "singleQuotes": true,
-  "include": [".ts$", ".tsx$"]
+  "include": [".ts$", ".tsx$"],
+  "exclude": [".style.ts$"]
 }
