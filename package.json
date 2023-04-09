@@ -9,13 +9,6 @@
     "deploy": "webpack && gh-pages -d dist",
     "barrel": "barrelsby --config ./barrelsby.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@private:calm1205/Lounge_Jungle.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
