@@ -13,6 +13,7 @@ export * from './TextArea';
 export * from './ImageGallery/ImageGallery';
 export * from './ImageGallery/Indicator/Indicator.style';
 export * from './ImageGallery/Indicator/Indicator';
+export * from './LineLink/LineLink';
 export * from './Radio/Radio';
 export * from './Tabs/Edge';
 export * from './Tabs/Tabs';

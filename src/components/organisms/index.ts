@@ -20,3 +20,4 @@ export * from './Slider/Slider';
 export * from './Slider/components/SliderStyle';
 export * from './Slider/components/SliderWrapper';
 export * from './Slider/components/Title';
+export * from './SnsLinks/SnsLinks';
