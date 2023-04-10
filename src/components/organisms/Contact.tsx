@@ -1,5 +1,5 @@
 import { theme } from '~/theme';
-import { Box, Id, Paragraph, Title } from '~/components/atoms';
+import { Box, Id, Title } from '~/components/atoms';
 import { SnsLinks } from '~/components/organisms';
 import { LineLink } from '~/components/molecules';
 
@@ -15,8 +15,7 @@ export const Contact: React.FC = () => (
       </Box>
 
       <Box padding={theme.space.m}>
-        <Paragraph text="お問い合わせは以下からお願いします。"></Paragraph>
-        <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
+        <Box marginTop={theme.space.m}>
           <LineLink />
         </Box>
       </Box>
