@@ -5,7 +5,6 @@
 export * from './Box';
 export * from './Dots';
 export * from './Footnote';
-export * from './FormErrorMessage';
 export * from './HorizontalLine';
 export * from './Hr';
 export * from './Id';

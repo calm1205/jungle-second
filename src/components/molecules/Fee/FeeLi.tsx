@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from '../atoms';
+import { Box } from '../../atoms';
 
 export type FeeLi = {
   name: string;
