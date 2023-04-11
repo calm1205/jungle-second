@@ -20,8 +20,6 @@ export const Contact: React.FC = () => (
         </Box>
       </Box>
 
-      {/* <EmailForm /> */}
-
       <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
         <SnsLinks />
       </Box>
