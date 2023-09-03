@@ -2,13 +2,13 @@ import { ReactNode } from 'react'
 import styled from 'styled-components'
 
 type BackgroundImage = {
-  image: string;
+  image: string
   size?: {
-    width?: string;
-    height?: string;
-  };
-  children?: ReactNode;
-};
+    width?: string
+    height?: string
+  }
+  children?: ReactNode
+}
 
 /**
  * ラップした要素の背景画像

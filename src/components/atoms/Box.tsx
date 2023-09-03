@@ -2,12 +2,12 @@ import { CSSProperties, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 type Box = {
-  children?: ReactNode;
-  marginX?: string;
-  marginY?: string;
-  paddingX?: string;
-  paddingY?: string;
-  onClick?: () => void;
+  children?: ReactNode
+  marginX?: string
+  marginY?: string
+  paddingX?: string
+  paddingY?: string
+  onClick?: () => void
 } & Pick<
   CSSProperties,
   | 'width'
@@ -27,7 +27,7 @@ type Box = {
   | 'flexDirection'
   | 'alignItems'
   | 'textAlign'
->;
+>
 
 /**
  * コンポーネント同士の空間制御

@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import { theme } from '~/theme'
 
 type Tab = {
-  text: string;
-  isActive: boolean;
-  onClick?: () => void;
-};
+  text: string
+  isActive: boolean
+  onClick?: () => void
+}
 
 /**
  * Tabの最小単位 - Tabsでラップして活用

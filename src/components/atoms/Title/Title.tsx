@@ -1,15 +1,13 @@
 import styled, { css } from 'styled-components'
 
 type Title = {
-  text: string;
-};
+  text: string
+}
 
 /**
  * カテゴリ毎のタイトル
  */
-export const Title: React.FC<Title> = ({ text }) => {
-  return <H2>{text}</H2>
-}
+export const Title: React.FC<Title> = ({ text }) => <H2>{text}</H2>
 
 const H2 = styled.h2`
   ${({ theme }) => css`

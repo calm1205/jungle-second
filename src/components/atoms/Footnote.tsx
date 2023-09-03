@@ -2,10 +2,10 @@ import styled, { css } from 'styled-components'
 import { theme } from '~/theme'
 
 type Footnote = {
-  text: string;
+  text: string
   /** theme.spaceを推奨 */
-  marginTop?: string;
-};
+  marginTop?: string
+}
 
 /**
  * 脚注
@@ -13,9 +13,7 @@ type Footnote = {
 export const Footnote: React.FC<Footnote> = ({
   text,
   marginTop = theme.space.s,
-}) => {
-  return <P marginTop={marginTop}>{text}</P>
-}
+}) => <P marginTop={marginTop}>{text}</P>
 
 const P = styled.p<Pick<Footnote, 'marginTop'>>`
   ${({ theme, marginTop }) => css`

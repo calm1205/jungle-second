@@ -3,8 +3,8 @@ import { Edge } from './Edge'
 import { useNavigate, useParams } from 'react-router-dom'
 
 type Tabs = {
-  tabs: string[];
-};
+  tabs: string[]
+}
 
 export const Tabs: React.FC<Tabs> = ({ tabs }) => {
   const { recruitId } = useParams()

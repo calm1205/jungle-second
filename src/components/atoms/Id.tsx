@@ -2,6 +2,4 @@ type Id = {
   id: string
 }
 
-export const Id: React.FC<Id> = ({ id }) => {
-  return <span id={id}></span>
-}
+export const Id: React.FC<Id> = ({ id }) => <span id={id}></span>

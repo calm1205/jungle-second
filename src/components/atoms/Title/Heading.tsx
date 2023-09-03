@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { theme } from '~/theme'
 
 type Heading = {
-  text: string;
-};
+  text: string
+}
 
 export const Heading: React.FC<Heading> = ({ text }) => {
   return <HeadingStyle>{text}</HeadingStyle>

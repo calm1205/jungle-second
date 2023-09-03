@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import { theme } from '~/theme'
 
 type CloseButton = {
-  onClick: () => void;
-};
-
-export const CloseButton: React.FC<CloseButton> = ({ onClick }) => {
-  return <CloseButtonStyle onClick={onClick} />
+  onClick: () => void
 }
+
+export const CloseButton: React.FC<CloseButton> = ({ onClick }) => (
+  <CloseButtonStyle onClick={onClick} />
+)
 
 const CloseButtonStyle = styled.span`
   display: block;

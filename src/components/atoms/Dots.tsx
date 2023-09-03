@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-export const Dots: React.FC = () => {
-  return <DotsStyle>・・・</DotsStyle>
-}
+export const Dots: React.FC = () => <DotsStyle>・・・</DotsStyle>
 
 const DotsStyle = styled.span`
   font-size: 0.7rem;

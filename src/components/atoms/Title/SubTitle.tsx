@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
 type SubTitle = {
-  text: string;
-};
+  text: string
+}
 
 /**
  * カテゴリの中でのタイトル

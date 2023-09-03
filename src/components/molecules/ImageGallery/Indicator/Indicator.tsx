@@ -4,10 +4,10 @@ import { Active, InActive } from './Indicator.style'
 
 type Indicator = {
   /** インジケーターの数 */
-  length: number;
+  length: number
   /** 選択されている要素index */
-  activeIndex: number;
-};
+  activeIndex: number
+}
 
 /**
  * ImageGalleryの選択中indexを示すインジケーター
