@@ -1,8 +1,5 @@
-# 会員制ラウンジ ジャングルHP
+# 会員制ラウンジ ジャングル HP
 
 ## 概要
 
-[ホームページURL](https://www.loungejungle.com/)
-
-
-
+[ホームページ URL](https://www.loungejungle.com/)
