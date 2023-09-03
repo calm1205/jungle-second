@@ -11,7 +11,6 @@ export const theme = {
     family: {
       default: 'serif',
       secondary: 'sans-serif',
-      crusive: 'Tangerine',
     },
     color: {
       default: '#313131',
