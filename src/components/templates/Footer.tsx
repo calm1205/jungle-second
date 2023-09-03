@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '~/theme';
 
 export const Footer: React.FC = () => {
-  return <FooterStyle>© Lounge Jungle All rights reserved.</FooterStyle>;
+  return <FooterStyle>© JUNGLE SECOND All rights reserved.</FooterStyle>;
 };
 
 const FooterStyle = styled.div`

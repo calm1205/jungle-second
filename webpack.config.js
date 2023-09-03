@@ -13,7 +13,7 @@ module.exports = {
   entry: './src/main.tsx',
   plugins: [
     new HtmlWebpackPulgin({
-      title: 'Lounge Jungle',
+      title: 'JUNGLE SECOND',
       template: path.resolve(__dirname, 'src', 'public', 'index.html'),
     }),
   ],

@@ -47,7 +47,7 @@ export const Slider: React.FC = () => {
   return (
     <SliderWrapper>
       <TitleBox margin={theme.space.m}>
-        <MainTitle>Lounge Jungle</MainTitle>
+        <MainTitle>JUNGLE SECOND</MainTitle>
         <SubTitle>{'気品と優美さを組み込んだ\n洗礼された空間'}</SubTitle>
       </TitleBox>
       {sliders}
