@@ -1,6 +1,5 @@
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import styled, { css } from 'styled-components';
-import * as CSS from 'csstype';
 
 type Box = {
   children?: ReactNode;
@@ -10,7 +9,7 @@ type Box = {
   paddingY?: string;
   onClick?: () => void;
 } & Pick<
-  CSS.Properties,
+  CSSProperties,
   | 'width'
   | 'height'
   | 'margin'
