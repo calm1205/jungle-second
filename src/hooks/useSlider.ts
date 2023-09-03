@@ -7,7 +7,7 @@ const INTERVAL = 3_000
  * 渡された配列の要素を1秒ごとに返却する。
  * 無限ループする。
  */
-const useSlider = (args: readonly unknown[]) => {
+export const useSlider = (args: readonly unknown[]) => {
   if (args.length === 0) return null
 
   const [slider, setSlider] = useState<unknown>(args[0])
@@ -26,5 +26,3 @@ const useSlider = (args: readonly unknown[]) => {
 
   return slider
 }
-
-export default useSlider

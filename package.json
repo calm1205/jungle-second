@@ -7,7 +7,7 @@
     "build": "webpack",
     "start": "webpack-dev-server",
     "deploy": "webpack && gh-pages -d dist",
-    "barrel": "barrelsby --config ./barrelsby.json"
+    "barrel": "barrelsby --config ./barrelsby.json && eslint --fix ./src"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",

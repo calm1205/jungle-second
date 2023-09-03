@@ -7,7 +7,6 @@ export { default as cast } from './cast.jpg'
 export { default as employee } from './employee.jpg'
 export { default as staff } from './staff.jpg'
 
-export { default as access } from './roppongi.jpg'
 export { default as map } from './map.jpg'
 
 export { default as slider1 } from './slider/bottol.jpg'
