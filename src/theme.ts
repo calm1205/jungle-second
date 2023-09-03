@@ -4,9 +4,7 @@ const SPACE_UNIT = 8
  * cssの共通テンプレート
  */
 export const theme = {
-  /**
-   * フォント
-   */
+  /** フォント */
   font: {
     family: {
       default: 'serif',
@@ -24,25 +22,19 @@ export const theme = {
     },
   },
 
-  /**
-   * カラーリング
-   */
+  /** カラーリング */
   color: {
     main: '#DEB887',
     disabled: 'gray',
     inActive: '#DDDDDD',
   },
 
-  /**
-   * 区切り線
-   */
+  /** 区切り線 */
   hr: {
     color: '#404040',
   },
 
-  /**
-   * 背景
-   */
+  /** 背景  */
   background: {
     color: {
       main: '#f3eee7',
@@ -51,9 +43,7 @@ export const theme = {
     },
   },
 
-  /**
-   * 余白
-   */
+  /** 余白 */
   space: {
     /** 単位 x 1 */
     xs: `${SPACE_UNIT}px`,
