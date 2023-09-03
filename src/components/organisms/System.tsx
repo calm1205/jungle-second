@@ -24,8 +24,8 @@ export const System: React.FC = () => {
           <FeeSection
             title="Regular"
             fees={[
-              { name: '1set', value: '¥15000' },
-              { name: 'additional', value: '¥8000' },
+              { name: '1set', value: '¥15,000' },
+              { name: 'additional', value: '¥8,000' },
             ]}
           />
         </Box>
@@ -36,8 +36,8 @@ export const System: React.FC = () => {
           <FeeSection
             title="Member"
             fees={[
-              { name: '1set', value: '¥12000' },
-              { name: 'additional', value: '¥6000' },
+              { name: '1set', value: '¥12,000' },
+              { name: 'additional', value: '¥6,000' },
             ]}
           />
         </Box>
@@ -48,9 +48,9 @@ export const System: React.FC = () => {
           <FeeSection
             title="Vip"
             fees={[
-              { name: '1set', value: '¥18000' },
+              { name: '1set', value: '¥18,000' },
               { name: 'charge', value: '¥0' },
-              { name: 'additional', value: '¥9000' },
+              { name: 'additional', value: '¥9,000' },
             ]}
           />
         </Box>
@@ -69,9 +69,9 @@ export const System: React.FC = () => {
           <Box marginTop={theme.space.m}>
             <FeeUl
               lists={[
-                { name: '本指名(60min)', value: '¥3000' },
-                { name: '場内指名(60min)', value: '¥5000' },
-                { name: '同伴', value: '¥5000' },
+                { name: '本指名(60min)', value: '¥3,000' },
+                { name: '場内指名(60min)', value: '¥5,000' },
+                { name: '同伴', value: '¥5,000' },
               ]}
             />
           </Box>

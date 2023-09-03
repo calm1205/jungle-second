@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components'
 import { theme } from '~/theme'
 
 type Paragraph = {
-  text: string;
+  text: string
   /** theme.spaceを推奨 */
-  marginTop?: string;
-};
+  marginTop?: string
+}
 
 export const Paragraph: FC<Paragraph> = ({
   text,
