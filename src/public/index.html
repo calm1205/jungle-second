@@ -7,8 +7,10 @@
       content="width=device-width,initial-scale=1"
     />
     <!-- favicon -->
-    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>😸</text></svg>"> -->
-    <link rel="icon" href=" " />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>🅙</text></svg>"
+    />
 
     <title><%= htmlWebpackPlugin.options.title %></title>
 
@@ -27,22 +29,22 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function (l) {
+      ;(function (l) {
         if (l.search[1] === '/') {
           var decoded = l.search
             .slice(1)
             .split('&')
             .map(function (s) {
-              return s.replace(/~and~/g, '&');
+              return s.replace(/~and~/g, '&')
             })
-            .join('?');
+            .join('?')
           window.history.replaceState(
             null,
             null,
             l.pathname.slice(0, -1) + decoded + l.hash
-          );
+          )
         }
-      })(window.location);
+      })(window.location)
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
   </head>
