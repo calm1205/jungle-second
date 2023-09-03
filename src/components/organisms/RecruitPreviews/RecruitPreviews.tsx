@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
-import { Box, Id, Title } from '~/components/atoms';
-import { theme } from '~/theme';
-import { RecruitPreview } from './RecruitPreview';
-import { cast, staff, employee } from '~/public/images';
+import { Link } from 'react-router-dom'
+import { Box, Id, Title } from '~/components/atoms'
+import { theme } from '~/theme'
+import { RecruitPreview } from './RecruitPreview'
+import { cast, staff, employee } from '~/public/images'
 
 export const RecruitPreviews: React.FC = () => {
   return (
@@ -36,5 +36,5 @@ export const RecruitPreviews: React.FC = () => {
 
       <Box paddingBottom={theme.space.xl} />
     </>
-  );
-};
+  )
+}

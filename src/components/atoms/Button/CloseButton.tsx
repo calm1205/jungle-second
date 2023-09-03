@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { theme } from '~/theme';
+import styled from 'styled-components'
+import { theme } from '~/theme'
 
 type CloseButton = {
   onClick: () => void;
 };
 
 export const CloseButton: React.FC<CloseButton> = ({ onClick }) => {
-  return <CloseButtonStyle onClick={onClick} />;
-};
+  return <CloseButtonStyle onClick={onClick} />
+}
 
 const CloseButtonStyle = styled.span`
   display: block;
@@ -34,4 +34,4 @@ const CloseButtonStyle = styled.span`
   &::after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-`;
+`

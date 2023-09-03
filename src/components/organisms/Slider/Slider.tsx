@@ -1,37 +1,37 @@
-import { useCallback, useEffect, useState } from 'react';
-import { MainTitle } from '~/components/atoms';
-import { slider1, slider2, slider3, slider4 } from '~/public/images';
-import { theme } from '~/theme';
+import { useCallback, useEffect, useState } from 'react'
+import { MainTitle } from '~/components/atoms'
+import { slider1, slider2, slider3, slider4 } from '~/public/images'
+import { theme } from '~/theme'
 import {
   SliderStyle,
   SliderWrapper,
   TitleBox,
   SubTitle,
-} from '~/components/organisms';
+} from '~/components/organisms'
 
-const IMAGES = [slider1, slider2, slider3, slider4] as const;
+const IMAGES = [slider1, slider2, slider3, slider4] as const
 
 export const Slider: React.FC = () => {
-  const [showIndex, setShow] = useState(1);
-  const [zoomIndex, setZoom] = useState(0);
-  const [initial, setInitial] = useState(true);
+  const [showIndex, setShow] = useState(1)
+  const [zoomIndex, setZoom] = useState(0)
+  const [initial, setInitial] = useState(true)
 
   const _callback = useCallback(() => {
-    setInitial(false);
+    setInitial(false)
     setShow((old) => {
-      if (old < IMAGES.length - 1) return old + 1;
-      return 0;
-    });
+      if (old < IMAGES.length - 1) return old + 1
+      return 0
+    })
     setZoom((old) => {
-      if (old < IMAGES.length - 1) return old + 1;
-      return 0;
-    });
-  }, []);
+      if (old < IMAGES.length - 1) return old + 1
+      return 0
+    })
+  }, [])
 
   useEffect(() => {
-    const inter = setInterval(_callback, 6000);
-    return () => clearInterval(inter);
-  }, []);
+    const inter = setInterval(_callback, 6000)
+    return () => clearInterval(inter)
+  }, [])
 
   const sliders = IMAGES.map((image, index) => (
     <SliderStyle
@@ -42,7 +42,7 @@ export const Slider: React.FC = () => {
        ${index === zoomIndex ? 'zoom' : ''}
       `}
     />
-  ));
+  ))
 
   return (
     <SliderWrapper>
@@ -53,5 +53,5 @@ export const Slider: React.FC = () => {
       {sliders}
       <SliderStyle key="initial" image={slider2} className={'initial'} />
     </SliderWrapper>
-  );
-};
+  )
+}

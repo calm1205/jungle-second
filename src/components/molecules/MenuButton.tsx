@@ -1,4 +1,4 @@
-import { Box, HorizontalLine } from '~/components/atoms';
+import { Box, HorizontalLine } from '~/components/atoms'
 
 type MenuButton = {
   onClick: () => void;
@@ -19,5 +19,5 @@ export const MenuButton: React.FC<MenuButton> = ({ onClick }) => {
       <HorizontalLine />
       <HorizontalLine />
     </Box>
-  );
-};
+  )
+}

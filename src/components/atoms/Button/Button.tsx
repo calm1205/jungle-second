@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 export const Button = styled.button`
   ${({ theme }) => css`
@@ -12,4 +12,4 @@ export const Button = styled.button`
     border: none;
     background-color: ${theme.color.main};
   `}
-`;
+`

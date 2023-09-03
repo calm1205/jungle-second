@@ -1,6 +1,6 @@
-import { Box, Line } from '~/components/atoms';
-import { Wrapper, Text, SubText } from './LineLink.style';
-import { theme } from '~/theme';
+import { Box, Line } from '~/components/atoms'
+import { Wrapper, Text, SubText } from './LineLink.style'
+import { theme } from '~/theme'
 
 /**
  * Lineの友だち追加リンク
@@ -18,4 +18,4 @@ export const LineLink = () => (
       </SubText>
     </Box>
   </Box>
-);
+)

@@ -1,4 +1,4 @@
-import { theme } from '~/theme';
+import { theme } from '~/theme'
 import {
   BackgroundImage,
   BackgroundWhite,
@@ -6,9 +6,9 @@ import {
   Id,
   Paragraph,
   Title,
-} from '~/components/atoms';
-import { map } from '~/public/images';
-import styled from 'styled-components';
+} from '~/components/atoms'
+import { map } from '~/public/images'
+import styled from 'styled-components'
 
 export const Access: React.FC = () => {
   return (
@@ -30,9 +30,9 @@ export const Access: React.FC = () => {
         </A>
       </Box>
     </BackgroundWhite>
-  );
-};
+  )
+}
 
 const A = styled.a`
   text-decoration: underline;
-`;
+`

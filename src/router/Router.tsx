@@ -1,9 +1,9 @@
-import { FC, lazy, Suspense, useCallback } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { FC, lazy, Suspense, useCallback } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export const Router: FC = () => {
-  const Top = lazy(() => import('~/components/pages/Top'));
-  const Recruit = lazy(() => import('~/components/pages/Recruit'));
+  const Top = lazy(() => import('~/components/pages/Top'))
+  const Recruit = lazy(() => import('~/components/pages/Recruit'))
 
   const suspensise = useCallback(
     (Component: React.LazyExoticComponent<FC>) => (
@@ -12,7 +12,7 @@ export const Router: FC = () => {
       </Suspense>
     ),
     []
-  );
+  )
 
   return (
     <BrowserRouter>
@@ -24,5 +24,5 @@ export const Router: FC = () => {
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
-  );
-};
+  )
+}

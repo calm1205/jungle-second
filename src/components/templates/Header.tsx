@@ -1,13 +1,13 @@
-import { useCallback, useState } from 'react';
-import styled from 'styled-components';
-import { Box } from '~/components/atoms';
-import { MenuButton, SideMenu } from '~/components/molecules';
-import { theme } from '~/theme';
+import { useCallback, useState } from 'react'
+import styled from 'styled-components'
+import { Box } from '~/components/atoms'
+import { MenuButton, SideMenu } from '~/components/molecules'
+import { theme } from '~/theme'
 
 export const Header: React.FC = () => {
-  const [open, setOpen] = useState(false);
-  const onOpen = useCallback(() => setOpen(true), [setOpen]);
-  const onClose = useCallback(() => setOpen(false), [setOpen]);
+  const [open, setOpen] = useState(false)
+  const onOpen = useCallback(() => setOpen(true), [setOpen])
+  const onClose = useCallback(() => setOpen(false), [setOpen])
 
   return (
     <>
@@ -18,8 +18,8 @@ export const Header: React.FC = () => {
       </FixWrapper>
       <SideMenu isDisplay={open} onClose={onClose} />
     </>
-  );
-};
+  )
+}
 
 const FixWrapper = styled.div`
   position: fixed;
@@ -31,4 +31,4 @@ const FixWrapper = styled.div`
   /* swipeable-imageより前面に出すために必要 */
   transform: translate3d(0px, 0px, 0px);
   z-index: 1;
-`;
+`

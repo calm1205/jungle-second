@@ -5,9 +5,9 @@ import {
   Hr,
   Id,
   Title,
-} from '~/components/atoms';
-import { theme } from '~/theme';
-import { FeeUl, FeeSection } from '~/components/molecules';
+} from '~/components/atoms'
+import { theme } from '~/theme'
+import { FeeUl, FeeSection } from '~/components/molecules'
 
 export const System: React.FC = () => {
   return (
@@ -94,5 +94,5 @@ export const System: React.FC = () => {
 
       <Box paddingBottom={theme.space.xl} />
     </BackgroundWhite>
-  );
-};
+  )
+}

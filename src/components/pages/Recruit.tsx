@@ -1,19 +1,19 @@
-import { ReactNode } from 'react';
-import { theme } from '~/theme';
-import { lounge1 } from '~/public/images';
+import { ReactNode } from 'react'
+import { theme } from '~/theme'
+import { lounge1 } from '~/public/images'
 import {
   BackgroundImage,
   Box,
   MainTitle,
   RoundButton,
-} from '~/components/atoms';
-import { Tabs } from '~/components/molecules';
-import { Cast, Employee, Staff } from '~/components/organisms';
-import { MainLayout } from '~/components/templates';
-import { useParams } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+} from '~/components/atoms'
+import { Tabs } from '~/components/molecules'
+import { Cast, Employee, Staff } from '~/components/organisms'
+import { MainLayout } from '~/components/templates'
+import { useParams } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-const TAB_KEYS = ['cast', 'employee', 'staff'] as const;
+const TAB_KEYS = ['cast', 'employee', 'staff'] as const
 type TabKeys = typeof TAB_KEYS[number];
 type TabContents = { [key in TabKeys]: ReactNode };
 
@@ -21,11 +21,11 @@ const tabContents: TabContents = {
   cast: <Cast />,
   employee: <Employee />,
   staff: <Staff />,
-};
+}
 
 const Recruit: React.FC = () => {
-  const { recruitId } = useParams();
-  const recruitIdFromUrl = (recruitId || 'cast') as TabKeys;
+  const { recruitId } = useParams()
+  const recruitIdFromUrl = (recruitId || 'cast') as TabKeys
 
   return (
     <MainLayout>
@@ -53,7 +53,7 @@ const Recruit: React.FC = () => {
         </Box>
       </Box>
     </MainLayout>
-  );
-};
+  )
+}
 
-export default Recruit;
+export default Recruit

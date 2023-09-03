@@ -22,10 +22,11 @@
     "react/react-in-jsx-scope": "off",
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
+    "semi": ["error", "never"],
     "quotes": ["error", "single"],
-    "semi": ["error", "always"],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"]
   },
-  "ignorePatterns": ["webpack.config.js", "styled-components.d.ts"]
+  "ignorePatterns": ["webpack.config.js", "styled-components.d.ts"],
+  "settings": { "react": { "version": "detect" } }
 }

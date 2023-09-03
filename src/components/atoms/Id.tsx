@@ -3,5 +3,5 @@ type Id = {
 };
 
 export const Id: React.FC<Id> = ({ id }) => {
-  return <span id={id}></span>;
-};
+  return <span id={id}></span>
+}

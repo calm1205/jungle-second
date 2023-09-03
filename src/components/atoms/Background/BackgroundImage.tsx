@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import styled from 'styled-components';
+import { ReactNode } from 'react'
+import styled from 'styled-components'
 
 type BackgroundImage = {
   image: string;
@@ -22,8 +22,8 @@ export const BackgroundImage: React.FC<BackgroundImage> = ({
     <Wrapper image={image} size={size}>
       {children}
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.div<BackgroundImage>`
   background-size: cover;
@@ -32,4 +32,4 @@ const Wrapper = styled.div<BackgroundImage>`
 
   width: ${({ size }) => size?.width};
   height: ${({ size }) => size?.height};
-`;
+`

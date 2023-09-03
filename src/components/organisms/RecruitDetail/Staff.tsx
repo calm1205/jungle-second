@@ -1,4 +1,4 @@
-import { RecruitDetail } from './RecruitDetail';
+import { RecruitDetail } from './RecruitDetail'
 
 export const Staff: React.FC = () => {
   return (
@@ -14,5 +14,5 @@ export const Staff: React.FC = () => {
         '送迎有り\n昇給昇格随時あり\n独立支援制度あり\n研修制度あり\n制服貸与\n体験入社OK\n正社員登用社保完備\n年齢不問\n経験者優遇\n未経験者歓迎'
       }
     />
-  );
-};
+  )
+}

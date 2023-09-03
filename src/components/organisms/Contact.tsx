@@ -1,7 +1,7 @@
-import { theme } from '~/theme';
-import { Box, Id, Title } from '~/components/atoms';
-import { SnsLinks } from '~/components/organisms';
-import { LineLink } from '~/components/molecules';
+import { theme } from '~/theme'
+import { Box, Id, Title } from '~/components/atoms'
+import { SnsLinks } from '~/components/organisms'
+import { LineLink } from '~/components/molecules'
 
 /**
  * 連絡手段
@@ -25,4 +25,4 @@ export const Contact: React.FC = () => (
       </Box>
     </Box>
   </>
-);
+)

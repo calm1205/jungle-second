@@ -1,5 +1,5 @@
-import { Box, SubTitle } from '~/components/atoms';
-import { FeeLi, FeeUl } from '~/components/molecules';
+import { Box, SubTitle } from '~/components/atoms'
+import { FeeLi, FeeUl } from '~/components/molecules'
 
 type FeeSection = {
   title: string;
@@ -20,5 +20,5 @@ export const FeeSection: React.FC<FeeSection> = ({ title, fees }) => {
         <FeeUl lists={fees} />
       </Box>
     </Box>
-  );
-};
+  )
+}

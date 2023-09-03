@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '~/theme';
+import styled from 'styled-components'
+import { theme } from '~/theme'
 
 type SliderStyleType = {
   image: string;
@@ -39,4 +39,4 @@ export const SliderStyle = styled.li<SliderStyleType>`
       opacity: 0;
     }
   }
-`;
+`

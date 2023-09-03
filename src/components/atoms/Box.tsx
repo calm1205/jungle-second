@@ -1,5 +1,5 @@
-import { CSSProperties, ReactNode } from 'react';
-import styled, { css } from 'styled-components';
+import { CSSProperties, ReactNode } from 'react'
+import styled, { css } from 'styled-components'
 
 type Box = {
   children?: ReactNode;
@@ -33,9 +33,9 @@ type Box = {
  * コンポーネント同士の空間制御
  */
 export const Box: React.FC<Box> = (props) => {
-  const { children, ...styles } = props;
-  return <Div {...styles}>{children}</Div>;
-};
+  const { children, ...styles } = props
+  return <Div {...styles}>{children}</Div>
+}
 
 const Div = styled.div<Omit<Box, 'children'>>`
   ${(styles) => css`
@@ -64,4 +64,4 @@ const Div = styled.div<Omit<Box, 'children'>>`
     align-items: ${styles.alignItems};
     text-align: ${styles.textAlign};
   `}
-`;
+`

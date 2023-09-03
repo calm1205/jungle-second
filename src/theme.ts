@@ -1,4 +1,4 @@
-const SPACE_UNIT = 8;
+const SPACE_UNIT = 8
 
 /**
  * cssの共通テンプレート
@@ -71,4 +71,4 @@ export const theme = {
     /** 単位 x 21 */
     xxxl: `${SPACE_UNIT * 21}px`,
   },
-};
+}

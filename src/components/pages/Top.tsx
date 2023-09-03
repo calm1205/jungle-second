@@ -4,8 +4,8 @@ import {
   RecruitPreviews,
   Access,
   Contact,
-} from '~/components/organisms';
-import { MainLayout } from '~/components/templates';
+} from '~/components/organisms'
+import { MainLayout } from '~/components/templates'
 
 const Top: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const Top: React.FC = () => {
       <Access />
       <Contact />
     </MainLayout>
-  );
-};
+  )
+}
 
-export default Top;
+export default Top

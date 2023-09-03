@@ -1,7 +1,7 @@
-import { theme } from '~/theme';
-import { Box, Id, Paragraph } from '~/components/atoms';
-import { ImageGallery } from '~/components/molecules';
-import { Slider } from './Slider/Slider';
+import { theme } from '~/theme'
+import { Box, Id, Paragraph } from '~/components/atoms'
+import { ImageGallery } from '~/components/molecules'
+import { Slider } from './Slider/Slider'
 
 export const Concept: React.FC = () => (
   <>
@@ -22,4 +22,4 @@ export const Concept: React.FC = () => (
       </Box>
     </Box>
   </>
-);
+)

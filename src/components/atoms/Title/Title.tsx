@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 type Title = {
   text: string;
@@ -8,8 +8,8 @@ type Title = {
  * カテゴリ毎のタイトル
  */
 export const Title: React.FC<Title> = ({ text }) => {
-  return <H2>{text}</H2>;
-};
+  return <H2>{text}</H2>
+}
 
 const H2 = styled.h2`
   ${({ theme }) => css`
@@ -18,4 +18,4 @@ const H2 = styled.h2`
     letter-spacing: ${theme.font.letterSpacing.title};
     line-height: 4rem;
   `}
-`;
+`

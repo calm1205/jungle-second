@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
-import { Footer } from './Footer';
-import { Header } from './Header';
+import { ReactNode } from 'react'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
 type MainLayout = {
   children: ReactNode;
@@ -16,5 +16,5 @@ export const MainLayout: React.FC<MainLayout> = ({ children }) => {
       {children}
       <Footer />
     </>
-  );
-};
+  )
+}

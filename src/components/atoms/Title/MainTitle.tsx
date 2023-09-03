@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 /**
  * 画面全体のタイトル
@@ -10,4 +10,4 @@ export const MainTitle = styled.h1`
       letter-spacing: 3px;
       color: ${theme.font.color.secondary};
     `}
-`;
+`

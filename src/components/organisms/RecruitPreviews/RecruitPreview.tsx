@@ -1,5 +1,5 @@
-import { theme } from '~/theme';
-import { BackgroundImage, Box, Footnote, SubTitle } from '~/components/atoms';
+import { theme } from '~/theme'
+import { BackgroundImage, Box, Footnote, SubTitle } from '~/components/atoms'
 
 type RecruitPreviewType = {
   image: string;
@@ -20,5 +20,5 @@ export const RecruitPreview: React.FC<RecruitPreviewType> = ({
         <SubTitle text={title} />
       </Box>
     </>
-  );
-};
+  )
+}

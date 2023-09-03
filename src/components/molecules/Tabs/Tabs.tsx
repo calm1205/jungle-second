@@ -1,14 +1,14 @@
-import { Box, Tab } from '~/components/atoms';
-import { Edge } from './Edge';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Box, Tab } from '~/components/atoms'
+import { Edge } from './Edge'
+import { useNavigate, useParams } from 'react-router-dom'
 
 type Tabs = {
   tabs: string[];
 };
 
 export const Tabs: React.FC<Tabs> = ({ tabs }) => {
-  const { recruitId } = useParams();
-  const navigate = useNavigate();
+  const { recruitId } = useParams()
+  const navigate = useNavigate()
 
   return (
     <Box display="flex">
@@ -21,9 +21,9 @@ export const Tabs: React.FC<Tabs> = ({ tabs }) => {
             isActive={key === recruitId}
             onClick={() => navigate(`/recruit/${key}`)}
           />
-        );
+        )
       })}
       <Edge />
     </Box>
-  );
-};
+  )
+}

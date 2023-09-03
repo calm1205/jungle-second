@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { theme } from '~/theme';
+import styled from 'styled-components'
+import { theme } from '~/theme'
 
 type Heading = {
   text: string;
 };
 
 export const Heading: React.FC<Heading> = ({ text }) => {
-  return <HeadingStyle>{text}</HeadingStyle>;
-};
+  return <HeadingStyle>{text}</HeadingStyle>
+}
 
 const HeadingStyle = styled.h3`
   font-size: 1.7rem;
@@ -15,4 +15,4 @@ const HeadingStyle = styled.h3`
 
   border-left: 5px solid ${theme.color.main};
   padding-left: ${theme.space.xs};
-`;
+`

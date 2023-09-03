@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import styled, { css } from 'styled-components';
-import { theme } from '~/theme';
+import { FC } from 'react'
+import styled, { css } from 'styled-components'
+import { theme } from '~/theme'
 
 type Paragraph = {
   text: string;
@@ -11,7 +11,7 @@ type Paragraph = {
 export const Paragraph: FC<Paragraph> = ({
   text,
   marginTop = theme.space.s,
-}) => <P marginTop={marginTop}>{text}</P>;
+}) => <P marginTop={marginTop}>{text}</P>
 
 const P = styled.p<Pick<Paragraph, 'marginTop'>>`
   ${({ theme, marginTop }) => css`
@@ -23,4 +23,4 @@ const P = styled.p<Pick<Paragraph, 'marginTop'>>`
 
     margin-top: ${marginTop};
   `}
-`;
+`

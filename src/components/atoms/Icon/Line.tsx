@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 /**
  * Lineアイコン
@@ -28,4 +28,4 @@ export const Line: FC = () => (
       /> */}
     </g>
   </svg>
-);
+)

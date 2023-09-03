@@ -1,5 +1,5 @@
-import { Box, Heading, Paragraph } from '~/components/atoms';
-import { theme } from '~/theme';
+import { Box, Heading, Paragraph } from '~/components/atoms'
+import { theme } from '~/theme'
 
 type Props = {
   title: string;
@@ -14,5 +14,5 @@ export const HeadingParagraph: React.FC<Props> = ({ title, text }) => {
         <Paragraph text={text} marginTop={theme.space.xs} />
       </Box>
     </>
-  );
-};
+  )
+}

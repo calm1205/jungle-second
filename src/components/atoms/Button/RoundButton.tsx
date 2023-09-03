@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 export const RoundButton = styled.button`
   ${({ theme }) => css`
@@ -14,4 +14,4 @@ export const RoundButton = styled.button`
 
     border-radius: 50px;
   `}
-`;
+`

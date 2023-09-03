@@ -1,6 +1,6 @@
-import { theme } from '~/theme';
-import { Box, Footnote, Title } from '~/components/atoms';
-import { HeadingParagraph } from '~/components/molecules/HeadingParagraph';
+import { theme } from '~/theme'
+import { Box, Footnote, Title } from '~/components/atoms'
+import { HeadingParagraph } from '~/components/molecules/HeadingParagraph'
 
 type Props = {
   footnote: string;
@@ -40,5 +40,5 @@ export const RecruitDetail: React.FC<Props> = ({
         <HeadingParagraph title="待遇" text={treatment} />
       </Box>
     </Box>
-  );
-};
+  )
+}

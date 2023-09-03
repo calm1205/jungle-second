@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Box, SubTitle, CloseButton } from '~/components/atoms';
+import styled from 'styled-components'
+import { Box, SubTitle, CloseButton } from '~/components/atoms'
 
 type SideMenu = {
   isDisplay: boolean;
@@ -48,8 +48,8 @@ export const SideMenu: React.FC<SideMenu> = ({
         </a>
       </Box>
     </FixWrapper>
-  );
-};
+  )
+}
 
 const FixWrapper = styled.div<Pick<SideMenu, 'isDisplay'>>`
   display: ${(props) => (props.isDisplay ? 'block' : 'none')};
@@ -65,4 +65,4 @@ const FixWrapper = styled.div<Pick<SideMenu, 'isDisplay'>>`
   /* swipeable-imageより前面に出すために必要 */
   transform: translate3d(0px, 0px, 0px);
   z-index: 2;
-`;
+`

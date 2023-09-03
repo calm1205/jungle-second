@@ -1,4 +1,4 @@
-import { theme } from '~/theme';
+import { theme } from '~/theme'
 
 export const Twitter: React.FC = () => {
   return (
@@ -24,5 +24,5 @@ export const Twitter: React.FC = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
