@@ -7,7 +7,7 @@ import { Box, Instagram, Twitter } from '~/components/atoms'
 export const SnsLinks: FC = () => {
   const sns = [
     { link: 'https://twitter.com/LoungeJUNGLE_', icon: <Twitter /> },
-    { link: 'https://www.instagram.com/loungejungle_/', icon: <Instagram /> },
+    { link: 'https://www.instagram.com/jungle.second/', icon: <Instagram /> },
   ] as const
 
   return (
