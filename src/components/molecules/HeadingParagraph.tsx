@@ -1,16 +1,28 @@
-import { Box, Heading, Paragraph } from '~/components/atoms'
+import { Box, Heading } from '~/components/atoms'
 import { theme } from '~/theme'
 
-type Props = {
+type HeadingParagraph = {
   title: string
   text: string
 }
 
-export const HeadingParagraph: React.FC<Props> = ({ title, text }) => (
+export const HeadingParagraph: React.FC<HeadingParagraph> = ({
+  title,
+  text,
+}) => (
   <Box>
     <Heading text={title} />
     <Box marginLeft={theme.space.s}>
-      <Paragraph text={text} marginTop={theme.space.xs} />
+      <p
+        style={{
+          fontSize: '1.5rem',
+          lineHeight: '2rem',
+          letterSpacing: theme.font.letterSpacing.paragraph,
+          whiteSpace: 'pre-wrap',
+        }}
+      >
+        {text}
+      </p>
     </Box>
   </Box>
 )
