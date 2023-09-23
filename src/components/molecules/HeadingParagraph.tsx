@@ -7,10 +7,10 @@ type Props = {
 }
 
 export const HeadingParagraph: React.FC<Props> = ({ title, text }) => (
-  <>
+  <Box>
     <Heading text={title} />
     <Box marginLeft={theme.space.s}>
       <Paragraph text={text} marginTop={theme.space.xs} />
     </Box>
-  </>
+  </Box>
 )

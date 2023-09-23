@@ -27,6 +27,7 @@ type Box = {
   | 'flexDirection'
   | 'alignItems'
   | 'textAlign'
+  | 'gap'
 >
 
 /**
@@ -57,6 +58,8 @@ const Div = styled.div<Omit<Box, 'children'>>`
     padding-bottom: ${styles.paddingBottom};
     padding: ${styles.paddingX && `0 ${styles.paddingX}`};
     padding: ${styles.paddingY && `${styles.paddingY} 0`};
+
+    gap: ${styles.gap};
 
     display: ${styles.display};
     justify-content: ${styles.justifyContent};

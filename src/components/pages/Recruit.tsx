@@ -8,19 +8,20 @@ import {
   RoundButton,
 } from '~/components/atoms'
 import { Tabs } from '~/components/molecules'
-import { Cast, Employee, Staff } from '~/components/organisms'
+import { RecruitDetail } from '~/components/organisms'
 import { MainLayout } from '~/components/templates'
 import { useParams } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import { CAST, EMPLOYEE, STAFF } from '~/constants'
 
 const TAB_KEYS = ['cast', 'employee', 'staff'] as const
-type TabKeys = typeof TAB_KEYS[number];
-type TabContents = { [key in TabKeys]: ReactNode };
+type TabKeys = typeof TAB_KEYS[number]
+type TabContents = { [key in TabKeys]: ReactNode }
 
 const tabContents: TabContents = {
-  cast: <Cast />,
-  employee: <Employee />,
-  staff: <Staff />,
+  cast: <RecruitDetail {...CAST} />,
+  employee: <RecruitDetail {...EMPLOYEE} />,
+  staff: <RecruitDetail {...STAFF} />,
 }
 
 const Recruit: React.FC = () => {
@@ -41,7 +42,7 @@ const Recruit: React.FC = () => {
       </BackgroundImage>
 
       <Box marginTop={theme.space.l}>
-        <Tabs tabs={['cast', 'employee', 'staff']} />
+        <Tabs tabs={TAB_KEYS as unknown as string[]} />
         {tabContents[recruitIdFromUrl]}
       </Box>
 
