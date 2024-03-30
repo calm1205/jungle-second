@@ -9,5 +9,5 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "onFocusChange",
-  "cSpell.ignoreWords": ["barrelsby"]
+  "cSpell.ignoreWords": ["barrelsby", "linebreak"]
 }
