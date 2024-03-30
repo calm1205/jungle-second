@@ -5,6 +5,7 @@
     "build": "webpack",
     "start": "webpack-dev-server",
     "deploy": "webpack && gh-pages -d dist",
+    "lint": "eslint ./src",
     "barrel": "barrelsby --config ./barrelsby.json && eslint --fix ./src"
   },
   "dependencies": {
