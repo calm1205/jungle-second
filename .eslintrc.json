@@ -25,7 +25,10 @@
     "semi": ["error", "never"],
     "quotes": ["error", "single"],
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "args": "all", "argsIgnorePattern": "^_" }
+    ]
   },
   "ignorePatterns": ["webpack.config.js", "styled-components.d.ts"],
   "settings": { "react": { "version": "detect" } }
