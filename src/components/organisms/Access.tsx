@@ -14,11 +14,11 @@ export const Access: React.FC = () => {
   return (
     <BackgroundWhite>
       <Id id="access" />
-      <Box paddingTop={theme.space.xl} textAlign="center">
+      <Box $paddingTop={theme.space.xl} $textAlign="center">
         <Title text="Access" />
       </Box>
 
-      <Box padding={theme.space.m} paddingBottom={theme.space.xl}>
+      <Box $padding={theme.space.m} $paddingBottom={theme.space.xl}>
         <BackgroundImage image={map} size={{ height: '260px' }} />
         <Paragraph text="六本木駅から徒歩5分" />
 

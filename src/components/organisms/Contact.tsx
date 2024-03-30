@@ -9,18 +9,18 @@ import { LineLink } from '~/components/molecules'
 export const Contact: React.FC = () => (
   <>
     <Id id="contact" />
-    <Box padding={`${theme.space.xl} 0`}>
-      <Box textAlign="center">
+    <Box $padding={`${theme.space.xl} 0`}>
+      <Box $textAlign="center">
         <Title text="Contact" />
       </Box>
 
-      <Box padding={theme.space.m}>
-        <Box marginTop={theme.space.m}>
+      <Box $padding={theme.space.m}>
+        <Box $marginTop={theme.space.m}>
           <LineLink />
         </Box>
       </Box>
 
-      <Box display="flex" justifyContent="center" marginTop={theme.space.m}>
+      <Box $display="flex" $justifyContent="center" $marginTop={theme.space.m}>
         <SnsLinks />
       </Box>
     </Box>

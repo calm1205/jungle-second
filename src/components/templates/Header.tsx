@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
   return (
     <>
       <FixWrapper>
-        <Box display="flex" justifyContent="right" alignItems="center">
+        <Box $display="flex" $justifyContent="right" $alignItems="center">
           <MenuButton onClick={onOpen} />
         </Box>
       </FixWrapper>

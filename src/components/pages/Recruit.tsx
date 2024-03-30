@@ -32,22 +32,22 @@ const Recruit: React.FC = () => {
     <MainLayout>
       <BackgroundImage image={lounge1} size={{ height: '220px' }}>
         <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          marginTop="70px"
+          $display="flex"
+          $justifyContent="center"
+          $alignItems="center"
+          $marginTop="70px"
         >
           <MainTitle>Recruit</MainTitle>
         </Box>
       </BackgroundImage>
 
-      <Box marginTop={theme.space.l}>
+      <Box $marginTop={theme.space.l}>
         <Tabs tabs={TAB_KEYS as unknown as string[]} />
         {tabContents[recruitIdFromUrl]}
       </Box>
 
-      <Box marginTop={theme.space.s} display="flex" justifyContent="center">
-        <Box width="50%">
+      <Box $marginTop={theme.space.s} $display="flex" $justifyContent="center">
+        <Box $width="50%">
           <HashLink to="/#contact">
             <RoundButton>Contact</RoundButton>
           </HashLink>

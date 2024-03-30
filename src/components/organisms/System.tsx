@@ -6,15 +6,15 @@ import { PRICE_SYSTEMS, SYSTEM_NOTE } from '~/constants'
 export const System: React.FC = () => (
   <BackgroundWhite>
     <Id id="system" />
-    <Box paddingY={theme.space.xl} textAlign="center">
+    <Box $paddingY={theme.space.xl} $textAlign="center">
       <Title text="System" />
     </Box>
 
     <Box
-      display="flex"
-      flexDirection="column"
-      gap={theme.space.l}
-      paddingX={theme.space.l}
+      $display="flex"
+      $flexDirection="column"
+      $gap={theme.space.l}
+      $paddingX={theme.space.l}
     >
       <FeeSection title="MAIN" fees={PRICE_SYSTEMS.main} />
       <FeeSection title="VIP" fees={PRICE_SYSTEMS.vip} />
@@ -24,6 +24,6 @@ export const System: React.FC = () => (
       <Footnote text={SYSTEM_NOTE} />
     </Box>
 
-    <Box paddingBottom={theme.space.xl} />
+    <Box $paddingBottom={theme.space.xl} />
   </BackgroundWhite>
 )

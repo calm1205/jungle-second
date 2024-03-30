@@ -12,10 +12,10 @@ export const SnsLinks: FC = () => {
 
   return (
     <Box
-      display="flex"
-      justifyContent="space-between"
-      alignItems="center"
-      width="100px"
+      $display="flex"
+      $justifyContent="space-between"
+      $alignItems="center"
+      $width="100px"
     >
       {sns.map((s) => (
         <a key={s.link} href={s.link} target="_blank" rel="noreferrer">

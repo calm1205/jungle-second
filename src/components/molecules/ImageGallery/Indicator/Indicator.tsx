@@ -13,7 +13,7 @@ type Indicator = {
  * ImageGalleryの選択中indexを示すインジケーター
  */
 export const Indicator: FC<Indicator> = ({ length, activeIndex }) => (
-  <Box display="flex">
+  <Box $display="flex">
     {[...Array(length)].map((_, i) => {
       if (i === activeIndex) return <Active key={`hr_${i}`} />
       return <InActive key={`hr_${i}`} />

@@ -11,20 +11,20 @@ export const SideMenu: React.FC<SideMenu> = ({
   onClose,
 }) => (
   <FixWrapper $isDisplay={isDisplay}>
-    <Box display="flex" justifyContent="right" height="70px">
-      <Box padding="20px">
+    <Box $display="flex" $justifyContent="right" $height="70px">
+      <Box $padding="20px">
         <CloseButton onClick={onClose} />
       </Box>
     </Box>
 
     <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-      alignItems="center"
-      height="calc(100vh - 70px)"
-      paddingTop="calc(25vh - 70px)"
-      paddingBottom="25vh"
+      $display="flex"
+      $flexDirection="column"
+      $justifyContent="space-between"
+      $alignItems="center"
+      $height="calc(100vh - 70px)"
+      $paddingTop="calc(25vh - 70px)"
+      $paddingBottom="25vh"
     >
       <a href="/#home" onClick={onClose}>
         <SubTitle text="Home" />

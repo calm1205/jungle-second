@@ -11,7 +11,7 @@ export const Tabs: React.FC<Tabs> = ({ tabs }) => {
   const navigate = useNavigate()
 
   return (
-    <Box display="flex">
+    <Box $display="flex">
       <Edge />
       {tabs.map((key) => {
         return (

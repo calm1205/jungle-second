@@ -7,7 +7,7 @@ export const Concept: React.FC = () => (
   <>
     <Id id="home" />
 
-    <Box paddingY={theme.space.xl} textAlign="center">
+    <Box $paddingY={theme.space.xl} $textAlign="center">
       <Slider />
 
       <Paragraph
@@ -17,7 +17,7 @@ export const Concept: React.FC = () => (
         marginTop={theme.space.l}
       />
 
-      <Box marginTop={theme.space.l}>
+      <Box $marginTop={theme.space.l}>
         <ImageGallery />
       </Box>
     </Box>

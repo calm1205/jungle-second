@@ -19,17 +19,21 @@ export const BackgroundImage: React.FC<BackgroundImage> = ({
   children,
 }) => {
   return (
-    <Wrapper image={image} size={size}>
+    <Wrapper $image={image} $size={size}>
       {children}
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div<BackgroundImage>`
+type TransientProps = {
+  [P in keyof BackgroundImage as `$${string & P}`]: BackgroundImage[P]
+}
+
+const Wrapper = styled.div<TransientProps>`
   background-size: cover;
-  background-image: url(${({ image }) => image});
+  background-image: url(${({ $image }) => $image});
   background-repeat: no-repeat;
 
-  width: ${({ size }) => size?.width};
-  height: ${({ size }) => size?.height};
+  width: ${({ $size }) => $size?.width};
+  height: ${({ $size }) => $size?.height};
 `

@@ -12,7 +12,7 @@ export const LineLink = () => (
       <Text>LINE応募</Text>
     </Wrapper>
 
-    <Box marginTop={theme.space.xs}>
+    <Box $marginTop={theme.space.xs}>
       <SubText>
         友達追加後に「ホームページを見た」とメッセージするとスムーズです。
       </SubText>

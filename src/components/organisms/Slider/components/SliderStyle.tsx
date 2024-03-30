@@ -2,14 +2,14 @@ import styled from 'styled-components'
 import { theme } from '~/theme'
 
 type SliderStyleType = {
-  image: string;
-};
+  $image: string
+}
 export const SliderStyle = styled.li<SliderStyleType>`
   position: absolute;
   top: 0;
 
   background-size: cover;
-  background-image: url(${({ image }) => image});
+  background-image: url(${({ $image }) => $image});
   background-repeat: no-repeat;
 
   width: 100%;

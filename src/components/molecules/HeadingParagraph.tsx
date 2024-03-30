@@ -12,7 +12,7 @@ export const HeadingParagraph: React.FC<HeadingParagraph> = ({
 }) => (
   <Box>
     <Heading text={title} />
-    <Box marginLeft={theme.space.s}>
+    <Box $marginLeft={theme.space.s}>
       <p
         style={{
           fontSize: '1.5rem',

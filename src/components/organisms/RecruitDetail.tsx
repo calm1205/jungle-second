@@ -19,11 +19,11 @@ export const RecruitDetail: React.FC<RecruitDetail> = ({
   holiday,
   treatment,
 }) => (
-  <Box padding={`${theme.space.l} ${theme.space.m}`}>
+  <Box $padding={`${theme.space.l} ${theme.space.m}`}>
     <Footnote text={footnote} marginTop="0" />
     <Title text={title} />
 
-    <Box display="flex" flexDirection="column" gap={theme.space.l}>
+    <Box $display="flex" $flexDirection="column" $gap={theme.space.l}>
       <HeadingParagraph title="勤務時間" text={time} />
       <HeadingParagraph title="給与" text={payment} />
       <HeadingParagraph title="休日" text={holiday} />

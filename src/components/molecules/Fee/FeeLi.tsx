@@ -12,10 +12,10 @@ export type FeeLi = {
 export const FeeLi: React.FC<FeeLi> = ({ name, value }) => (
   <FeeLiStyle>
     <Box
-      display="flex"
-      justifyContent="space-between"
-      gap="10px"
-      alignItems="center"
+      $display="flex"
+      $justifyContent="space-between"
+      $gap="10px"
+      $alignItems="center"
     >
       <Name>{name}</Name>
       <Hr />

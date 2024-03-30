@@ -6,13 +6,13 @@ type MenuButton = {
 
 export const MenuButton: React.FC<MenuButton> = ({ onClick }) => (
   <Box
-    width="70px"
-    height="70px"
-    display="flex"
-    flexDirection="column"
-    justifyContent="space-between"
-    padding="26px 24px"
-    onClick={onClick}
+    $width="70px"
+    $height="70px"
+    $display="flex"
+    $flexDirection="column"
+    $justifyContent="space-between"
+    $padding="26px 24px"
+    $onClick={onClick}
   >
     <HorizontalLine />
     <HorizontalLine />

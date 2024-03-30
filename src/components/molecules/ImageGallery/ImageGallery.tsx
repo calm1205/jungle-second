@@ -56,7 +56,7 @@ export const ImageGallery: FC = () => {
         ))}
       </div>
 
-      <Box margin={theme.space.m}>
+      <Box $margin={theme.space.m}>
         <Indicator length={4} activeIndex={activeIndex} />
       </Box>
     </>

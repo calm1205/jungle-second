@@ -17,7 +17,7 @@ export const Fee: React.FC<FeeType> = ({
 
   return (
     <>
-      <Box display="flex" justifyContent="space-between" alignItems="end">
+      <Box $display="flex" $justifyContent="space-between" $alignItems="end">
         <SubTitle text={title} />
         <Paragraph text={`${fee.toLocaleString()}円 ${timeDisplay}`} />
       </Box>

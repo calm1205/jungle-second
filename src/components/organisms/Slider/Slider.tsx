@@ -36,7 +36,7 @@ export const Slider: React.FC = () => {
   const sliders = IMAGES.map((image, index) => (
     <SliderStyle
       key={index}
-      image={image}
+      $image={image}
       className={`
        ${index === showIndex && !initial ? 'show zoom' : ''}
        ${index === zoomIndex ? 'zoom' : ''}
@@ -46,12 +46,12 @@ export const Slider: React.FC = () => {
 
   return (
     <SliderWrapper>
-      <TitleBox margin={theme.space.m}>
+      <TitleBox $margin={theme.space.m}>
         <MainTitle>JUNGLE SECOND</MainTitle>
         <SubTitle>{'気品と優美さを組み込んだ\n洗礼された空間'}</SubTitle>
       </TitleBox>
       {sliders}
-      <SliderStyle key="initial" image={slider2} className={'initial'} />
+      <SliderStyle key="initial" $image={slider2} className={'initial'} />
     </SliderWrapper>
   )
 }

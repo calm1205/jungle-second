@@ -11,16 +11,16 @@ type Paragraph = {
 export const Paragraph: FC<Paragraph> = ({
   text,
   marginTop = theme.space.s,
-}) => <P marginTop={marginTop}>{text}</P>
+}) => <P $marginTop={marginTop}>{text}</P>
 
-const P = styled.p<Pick<Paragraph, 'marginTop'>>`
-  ${({ theme, marginTop }) => css`
+const P = styled.p<{ $marginTop: string }>`
+  ${({ theme, $marginTop }) => css`
     font-size: 1.7rem;
     color: ${theme.font.color.default};
     letter-spacing: ${theme.font.letterSpacing.paragraph};
     line-height: 2rem;
     white-space: pre-wrap;
 
-    margin-top: ${marginTop};
+    margin-top: ${$marginTop};
   `}
 `

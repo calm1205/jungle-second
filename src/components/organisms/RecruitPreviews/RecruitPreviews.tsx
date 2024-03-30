@@ -8,23 +8,23 @@ export const RecruitPreviews: React.FC = () => {
   return (
     <>
       <Id id="recruit" />
-      <Box paddingTop={theme.space.xl} textAlign="center">
+      <Box $paddingTop={theme.space.xl} $textAlign="center">
         <Title text="Recruit" />
       </Box>
 
-      <Box padding={theme.space.m}>
+      <Box $padding={theme.space.m}>
         <Link to="/recruit/cast">
           <RecruitPreview title="Cast" text="キャスト" image={cast} />
         </Link>
       </Box>
 
-      <Box padding={theme.space.m}>
+      <Box $padding={theme.space.m}>
         <Link to="/recruit/employee">
           <RecruitPreview title="Employee" text="正社員" image={employee} />
         </Link>
       </Box>
 
-      <Box padding={theme.space.m}>
+      <Box $padding={theme.space.m}>
         <Link to="/recruit/staff">
           <RecruitPreview
             title="Staff"
@@ -34,7 +34,7 @@ export const RecruitPreviews: React.FC = () => {
         </Link>
       </Box>
 
-      <Box paddingBottom={theme.space.xl} />
+      <Box $paddingBottom={theme.space.xl} />
     </>
   )
 }
