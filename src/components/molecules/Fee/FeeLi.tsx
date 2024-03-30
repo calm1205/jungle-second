@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Box } from '../../atoms'
+import { Box, Hr } from '~/components/atoms'
 
 export type FeeLi = {
   name: string
@@ -11,9 +11,15 @@ export type FeeLi = {
  */
 export const FeeLi: React.FC<FeeLi> = ({ name, value }) => (
   <FeeLiStyle>
-    <Box display="flex" justifyContent="space-between">
-      <span>{name}</span>
-      <span>{value}</span>
+    <Box
+      display="flex"
+      justifyContent="space-between"
+      gap="10px"
+      alignItems="center"
+    >
+      <Name>{name}</Name>
+      <Hr />
+      <Value>{value}</Value>
     </Box>
   </FeeLiStyle>
 )
@@ -21,4 +27,12 @@ export const FeeLi: React.FC<FeeLi> = ({ name, value }) => (
 const FeeLiStyle = styled.li`
   list-style: none;
   font-size: 1.7rem;
+`
+
+const Name = styled.span`
+  font-size: 1.5rem;
+  white-space: nowrap;
+`
+const Value = styled.span`
+  font-size: 1.2rem;
 `

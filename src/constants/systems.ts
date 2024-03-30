@@ -1,36 +1,39 @@
 import { FeeSection } from '~/components/molecules'
 
-type PriceType = 'regular' | 'vip' | 'basic' | 'designate' | 'service'
+type PriceType = 'main' | 'vip' | 'royalVip' | 'otherCharge'
 type PriceSystems = {
   [key in PriceType]: FeeSection['fees']
 }
 
 export const PRICE_SYSTEMS: PriceSystems = {
-  regular: [
-    { name: '1set', value: '¥12,000' },
-    { name: 'additional', value: '¥6,000' },
+  main: [
+    { name: '20:00〜21:59（60min）', value: '12,000yen' },
+    { name: '22:00〜（60min）', value: '15,000yen' },
+    { name: '延長料 20:00〜21:59（30min）', value: '6,000yen' },
+    { name: '延長料 22:00〜（30min）', value: '7,500yen' },
   ],
   vip: [
-    { name: '1set', value: '¥18,000' },
-    { name: 'additional', value: '¥9,000' },
+    { name: 'ALL TIME（60min）', value: '16,000yen' },
+    { name: '延長料 ALL TIME（30min）', value: '8,000yen' },
   ],
-  basic: [
-    { name: '1set', value: '60min' },
-    { name: 'additional', value: '30min' },
+  royalVip: [
+    { name: '20:00〜21:59（60min）', value: '18,000yen' },
+    { name: '22:00〜（60min）', value: '20,000yen' },
+    { name: '延長料 20:00〜21:59（30min）', value: '9,000yen' },
+    { name: '延長料 22:00〜（30min）', value: '10,000yen' },
   ],
-  designate: [
-    { name: '本指名(60min)', value: '¥3,000' },
-    { name: '場内指名(60min)', value: '¥5,000' },
-    { name: '同伴', value: '¥5,000' },
-  ],
-  service: [
+  otherCharge: [
+    { name: '本指名（60min）', value: '3,000yen' },
+    { name: '場内料（60min）', value: '5,000yen' },
+    { name: '同伴（回）', value: '5,000yen' },
     { name: 'サービス料', value: '30%' },
     { name: '消費税', value: '10%' },
   ],
 }
 
-export const SYSTEM_NOTE = `※ 自動延長制となります。
-※ 追加指名は1人につき、セット料金の50%頂きます。
-※ オーダー料金は別途頂戴いたします。
-※ 会員登録時にお名刺を頂戴いたします。
-※ 同業者、スカウトマンの入店はお断りいたします。`
+export const SYSTEM_NOTE = `※ 当店は自動延長制となります。
+※ お1人様による複数本指名をご希望される場合は、追加指名1人につき「セット料金の50%」を頂戴いたします。
+※ お連れの女性のお客様は、1名につき「セット料金の50%」を頂戴いたします。
+※ ご同伴の場合は「60分制」のご案内となります。
+※ 上記金額はお1人様ご利用時の料金です。
+`

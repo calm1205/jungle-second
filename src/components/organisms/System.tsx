@@ -1,13 +1,6 @@
-import {
-  BackgroundWhite,
-  Box,
-  Footnote,
-  Hr,
-  Id,
-  Title,
-} from '~/components/atoms'
+import { BackgroundWhite, Box, Footnote, Id, Title } from '~/components/atoms'
 import { theme } from '~/theme'
-import { FeeUl, FeeSection } from '~/components/molecules'
+import { FeeSection } from '~/components/molecules'
 import { PRICE_SYSTEMS, SYSTEM_NOTE } from '~/constants'
 
 export const System: React.FC = () => (
@@ -21,29 +14,12 @@ export const System: React.FC = () => (
       display="flex"
       flexDirection="column"
       gap={theme.space.l}
-      paddingX={theme.space.m}
+      paddingX={theme.space.l}
     >
-      <Hr />
-      <Box marginX={theme.space.m}>
-        <FeeSection title="Regular" fees={PRICE_SYSTEMS.regular} />
-      </Box>
-      <Hr />
-      <Box marginX={theme.space.m}>
-        <FeeSection title="Vip" fees={PRICE_SYSTEMS.vip} />
-      </Box>
-      <Hr />
-
-      <Box
-        marginTop={theme.space.m}
-        paddingX={theme.space.xl}
-        display="flex"
-        flexDirection="column"
-        gap={theme.space.m}
-      >
-        <FeeUl lists={PRICE_SYSTEMS.basic} />
-        <FeeUl lists={PRICE_SYSTEMS.designate} />
-        <FeeUl lists={PRICE_SYSTEMS.service} />
-      </Box>
+      <FeeSection title="MAIN" fees={PRICE_SYSTEMS.main} />
+      <FeeSection title="VIP" fees={PRICE_SYSTEMS.vip} />
+      <FeeSection title="ROYAL VIP" fees={PRICE_SYSTEMS.royalVip} />
+      <FeeSection title="OTHER CHARGE" fees={PRICE_SYSTEMS.otherCharge} />
 
       <Footnote text={SYSTEM_NOTE} />
     </Box>

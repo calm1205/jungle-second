@@ -1,4 +1,5 @@
-import { Box, SubTitle } from '~/components/atoms'
+import { styled } from 'styled-components'
+import { Box } from '~/components/atoms'
 import { FeeLi, FeeUl } from '~/components/molecules'
 
 export type FeeSection = {
@@ -10,13 +11,12 @@ export type FeeSection = {
  * 料金の1セクション
  */
 export const FeeSection: React.FC<FeeSection> = ({ title, fees }) => (
-  <Box display="flex" justifyContent="space-between" alignItems="center">
-    <Box width="40%" textAlign="center">
-      <SubTitle text={title} />
-    </Box>
-
-    <Box width="45%">
-      <FeeUl lists={fees} />
-    </Box>
+  <Box display="flex" flexDirection="column" gap="10px" alignItems="center">
+    <Title>■{title}■</Title>
+    <FeeUl lists={fees} />
   </Box>
 )
+
+const Title = styled.h3`
+  font-size: 2rem;
+`
