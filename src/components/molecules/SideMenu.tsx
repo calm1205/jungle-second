@@ -10,7 +10,7 @@ export const SideMenu: React.FC<SideMenu> = ({
   isDisplay = false,
   onClose,
 }) => (
-  <FixWrapper isDisplay={isDisplay}>
+  <FixWrapper $isDisplay={isDisplay}>
     <Box display="flex" justifyContent="right" height="70px">
       <Box padding="20px">
         <CloseButton onClick={onClose} />
@@ -49,8 +49,8 @@ export const SideMenu: React.FC<SideMenu> = ({
   </FixWrapper>
 )
 
-const FixWrapper = styled.div<Pick<SideMenu, 'isDisplay'>>`
-  display: ${(props) => (props.isDisplay ? 'block' : 'none')};
+const FixWrapper = styled.div<{ $isDisplay: boolean }>`
+  display: ${(props) => (props.$isDisplay ? 'block' : 'none')};
 
   position: fixed;
   top: 0;
