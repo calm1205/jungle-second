@@ -12,6 +12,7 @@
 
 ```
 $ git checkout deploy
+$ git merge main
 $ npm run deploy
 ```
 
