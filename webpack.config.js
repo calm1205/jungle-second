@@ -2,17 +2,17 @@
  * core nodejs moduleの1つ。
  * デフォルトでnodejsが提供しているmodule
  */
-const path = require('path');
+const path = require('path')
 /**
  * このpluginでcontenthashが書き込まれたhtmlファイルの出力が可能
  * https://github.com/jantimon/html-webpack-plugin#options
  */
-const HtmlWebpackPulgin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: './src/main.tsx',
   plugins: [
-    new HtmlWebpackPulgin({
+    new HtmlWebpackPlugin({
       title: 'JUNGLE SECOND',
       template: path.resolve(__dirname, 'src', 'public', 'index.html'),
     }),
@@ -75,4 +75,4 @@ module.exports = {
       logging: 'warn',
     },
   },
-};
+}
