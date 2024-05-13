@@ -7,7 +7,7 @@ import { theme } from '~/theme'
  */
 export const LineLink = () => (
   <Box>
-    <Wrapper href="https://line.me/ti/p/5mzMhtFKvz">
+    <Wrapper href="https://lin.ee/CNUvELb">
       <Line />
       <Text>LINE応募</Text>
     </Wrapper>
