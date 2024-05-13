@@ -1,8 +1,8 @@
-# 会員制ラウンジ JUNGLE SECOND HP
+# JUNGLE SECOND
 
 ## 概要
 
-[ホームページ URL](https://www.loungejungle.com/)
+[ホームページ URL](https://www.jungle-second.com/)
 
 <br/>
 
@@ -10,10 +10,9 @@
 
 `gh-pages`を活用
 
-deploy ブランチで以下を実行
-
 ```
+$ git checkout deploy
 $ npm run deploy
 ```
 
-`github`の`setting`タブの`Pages`でドメインを設定し直す。（`www.jungle-second.com`）
+[Pages](https://github.com/calm1205/jungle-second/settings/pages)でドメインを設定し直す。（`www.jungle-second.com`）
